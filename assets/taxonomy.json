@@ -1,0 +1,197 @@
+{
+  "axes": {
+    "form": {
+      "fluid": {
+        "label": "Fluid",
+        "cn": "流体",
+        "color": "#2b36ff",
+        "note": "Liquids, surfaces, particles and wave fields."
+      },
+      "life": {
+        "label": "Life",
+        "cn": "生命",
+        "color": "#3f7f52",
+        "note": "Growth, cells and swarm behaviour."
+      },
+      "structure": {
+        "label": "Structure",
+        "cn": "结构",
+        "color": "#b7672f",
+        "note": "Geometry folded, lensed or assembled."
+      },
+      "interface": {
+        "label": "Interface",
+        "cn": "界面",
+        "color": "#6657ff",
+        "note": "Controls, menus and cursor states."
+      },
+      "image": {
+        "label": "Image",
+        "cn": "图像",
+        "color": "#b23a48",
+        "note": "Photography, galleries and editorial sequences."
+      },
+      "type": {
+        "label": "Type",
+        "cn": "字体",
+        "color": "#181714",
+        "note": "Letterforms as motion and image containers."
+      },
+      "space": {
+        "label": "Space",
+        "cn": "空间",
+        "color": "#14867a",
+        "note": "Camera, depth and navigable 3D fields."
+      }
+    },
+    "mechanism": {
+      "simulate": {
+        "label": "Simulate",
+        "cn": "模拟",
+        "note": "Solve a physical field in real time."
+      },
+      "generate": {
+        "label": "Generate",
+        "cn": "生成",
+        "note": "Grow form from rules, not keyframes."
+      },
+      "scroll": {
+        "label": "Scroll",
+        "cn": "滚动",
+        "note": "Compose time along the scroll axis."
+      },
+      "hover": {
+        "label": "Hover",
+        "cn": "悬停",
+        "note": "Respond to cursor and proximity."
+      },
+      "transition": {
+        "label": "Transition",
+        "cn": "转场",
+        "note": "Carry one view into another."
+      },
+      "navigate": {
+        "label": "Navigate",
+        "cn": "导航",
+        "note": "Move through a set of panels or places."
+      },
+      "compose": {
+        "label": "Compose",
+        "cn": "编排",
+        "note": "Arrange many pieces into a whole."
+      }
+    },
+    "engine": {
+      "webgpu": {
+        "label": "WebGPU",
+        "cn": "WebGPU",
+        "note": "GPU compute and next-generation rendering."
+      },
+      "webgl": {
+        "label": "WebGL",
+        "cn": "WebGL",
+        "note": "Shader-driven WebGL scenes and simulations."
+      },
+      "dom": {
+        "label": "DOM",
+        "cn": "DOM / CSS",
+        "note": "HTML, CSS and JavaScript as the material."
+      },
+      "svg": {
+        "label": "SVG",
+        "cn": "SVG",
+        "note": "Vector geometry, masks and filters."
+      },
+      "canvas": {
+        "label": "Canvas",
+        "cn": "Canvas",
+        "note": "Canvas 2D drawing and pointer surfaces."
+      }
+    },
+    "tempo": {
+      "ambient": {
+        "label": "Ambient",
+        "cn": "漫游",
+        "note": "Slow, continuous, self-running."
+      },
+      "reactive": {
+        "label": "Reactive",
+        "cn": "响应",
+        "note": "Answers the pointer immediately."
+      },
+      "cinematic": {
+        "label": "Cinematic",
+        "cn": "电影感",
+        "note": "Staged reveals and scene changes."
+      },
+      "playful": {
+        "label": "Playful",
+        "cn": "游戏感",
+        "note": "Tactile, elastic, toy-like."
+      }
+    }
+  },
+  "works": [
+    { "id": "paint", "form": "fluid", "mechanism": "simulate", "engine": "webgl", "tempo": "reactive" },
+    { "id": "works", "form": "type", "mechanism": "generate", "engine": "webgpu", "tempo": "ambient" },
+    { "id": "works-2", "form": "life", "mechanism": "generate", "engine": "webgpu", "tempo": "ambient" },
+    { "id": "works-3", "form": "fluid", "mechanism": "simulate", "engine": "webgpu", "tempo": "ambient" },
+    { "id": "works-4", "form": "life", "mechanism": "generate", "engine": "webgpu", "tempo": "ambient" },
+    { "id": "works-5", "form": "fluid", "mechanism": "simulate", "engine": "webgpu", "tempo": "ambient" },
+    { "id": "works-6", "form": "fluid", "mechanism": "simulate", "engine": "webgpu", "tempo": "ambient" },
+    { "id": "flow", "form": "fluid", "mechanism": "simulate", "engine": "webgl", "tempo": "ambient" },
+    { "id": "waves", "form": "fluid", "mechanism": "simulate", "engine": "webgl", "tempo": "ambient" },
+    { "id": "fluid", "form": "fluid", "mechanism": "simulate", "engine": "webgl", "tempo": "ambient" },
+    { "id": "vortexshedding", "form": "fluid", "mechanism": "simulate", "engine": "webgl", "tempo": "reactive" },
+    { "id": "origamisimulator", "form": "structure", "mechanism": "simulate", "engine": "webgl", "tempo": "reactive" },
+    { "id": "gpu-io", "form": "fluid", "mechanism": "simulate", "engine": "webgl", "tempo": "reactive" },
+    { "id": "gpu-io-13", "form": "life", "mechanism": "generate", "engine": "webgl", "tempo": "ambient" },
+    { "id": "gpu-io-14", "form": "life", "mechanism": "generate", "engine": "webgl", "tempo": "ambient" },
+    { "id": "gpu-io-15", "form": "fluid", "mechanism": "simulate", "engine": "webgl", "tempo": "reactive" },
+    { "id": "flights-tracker", "form": "space", "mechanism": "navigate", "engine": "webgl", "tempo": "cinematic" },
+    { "id": "webgpu-water", "form": "fluid", "mechanism": "simulate", "engine": "webgpu", "tempo": "ambient" },
+    { "id": "lenticular-lens", "form": "structure", "mechanism": "hover", "engine": "webgpu", "tempo": "reactive" },
+    { "id": "raindrop", "form": "fluid", "mechanism": "hover", "engine": "webgpu", "tempo": "ambient" },
+    { "id": "directionawarehovereffect", "form": "interface", "mechanism": "hover", "engine": "dom", "tempo": "reactive" },
+    { "id": "windy", "form": "interface", "mechanism": "navigate", "engine": "dom", "tempo": "playful" },
+    { "id": "baraja", "form": "image", "mechanism": "compose", "engine": "dom", "tempo": "playful" },
+    { "id": "stackslider", "form": "image", "mechanism": "compose", "engine": "dom", "tempo": "playful" },
+    { "id": "thumbnailgridexpandingpreview", "form": "image", "mechanism": "compose", "engine": "dom", "tempo": "reactive" },
+    { "id": "fullscreenlayoutpagetransitions", "form": "image", "mechanism": "transition", "engine": "dom", "tempo": "cinematic" },
+    { "id": "pagetransitions", "form": "image", "mechanism": "transition", "engine": "dom", "tempo": "cinematic" },
+    { "id": "morphingdevices", "form": "structure", "mechanism": "transition", "engine": "svg", "tempo": "playful" },
+    { "id": "creativebuttons", "form": "interface", "mechanism": "hover", "engine": "dom", "tempo": "playful" },
+    { "id": "dynamicgrid", "form": "space", "mechanism": "compose", "engine": "dom", "tempo": "playful" },
+    { "id": "modalwindoweffects", "form": "interface", "mechanism": "transition", "engine": "dom", "tempo": "playful" },
+    { "id": "animatedsvgicons", "form": "interface", "mechanism": "hover", "engine": "svg", "tempo": "playful" },
+    { "id": "elastistack", "form": "interface", "mechanism": "navigate", "engine": "dom", "tempo": "playful" },
+    { "id": "perspectivepageviewnavigation", "form": "interface", "mechanism": "navigate", "engine": "dom", "tempo": "cinematic" },
+    { "id": "bookpreview", "form": "image", "mechanism": "transition", "engine": "dom", "tempo": "cinematic" },
+    { "id": "scatteredpolaroidsgallery", "form": "image", "mechanism": "compose", "engine": "dom", "tempo": "playful" },
+    { "id": "gridgallery", "form": "image", "mechanism": "compose", "engine": "dom", "tempo": "cinematic" },
+    { "id": "coverpagetransition", "form": "image", "mechanism": "transition", "engine": "dom", "tempo": "cinematic" },
+    { "id": "glitchperspective", "form": "image", "mechanism": "hover", "engine": "dom", "tempo": "playful" },
+    { "id": "menutogrid", "form": "interface", "mechanism": "navigate", "engine": "dom", "tempo": "playful" },
+    { "id": "scrollpanels", "form": "image", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "onscrolltypographyanimations", "form": "type", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "fullscreenclipeffect", "form": "image", "mechanism": "transition", "engine": "dom", "tempo": "cinematic" },
+    { "id": "gooeycursor", "form": "interface", "mechanism": "hover", "engine": "canvas", "tempo": "playful" },
+    { "id": "onscrollfilter", "form": "image", "mechanism": "scroll", "engine": "svg", "tempo": "cinematic" },
+    { "id": "gridfloweffect", "form": "space", "mechanism": "scroll", "engine": "dom", "tempo": "playful" },
+    { "id": "scroll3dgrid", "form": "space", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "slideshowanimations", "form": "image", "mechanism": "transition", "engine": "dom", "tempo": "cinematic" },
+    { "id": "motiontrailanimations", "form": "image", "mechanism": "hover", "engine": "canvas", "tempo": "playful" },
+    { "id": "stickysections", "form": "image", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "3dstackmotion", "form": "space", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "imageexpansiontypography", "form": "type", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "staggered3dgridanimations", "form": "space", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "3dcarousel", "form": "image", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "elasticgridscroll", "form": "space", "mechanism": "scroll", "engine": "dom", "tempo": "playful" },
+    { "id": "balloonbutton", "form": "interface", "mechanism": "hover", "engine": "canvas", "tempo": "playful" },
+    { "id": "rotatingonscrollanimations", "form": "image", "mechanism": "scroll", "engine": "dom", "tempo": "cinematic" },
+    { "id": "cinemaseatpreview", "form": "image", "mechanism": "hover", "engine": "dom", "tempo": "cinematic" },
+    { "id": "seamtransitions", "form": "image", "mechanism": "transition", "engine": "dom", "tempo": "cinematic" },
+    { "id": "lookbookhovereffects", "form": "image", "mechanism": "hover", "engine": "dom", "tempo": "playful" },
+    { "id": "inlinehoverreveals", "form": "image", "mechanism": "hover", "engine": "dom", "tempo": "playful" }
+  ]
+}

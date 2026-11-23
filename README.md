@@ -19,16 +19,30 @@
 | `06-codrops-worlds` | Codrops — built worlds | 27 |
 | **Total** | | **61** |
 
+## The four axes
+
+Every work is classified once on each axis, so the same 61 works can be read as forms, mechanisms, engines or tempos:
+
+| Axis | Values | What it answers |
+|---|---|---|
+| **Form** | Fluid · Life · Structure · Interface · Image · Type · Space | What the work is |
+| **Mechanism** | Simulate · Generate · Scroll · Hover · Transition · Navigate · Compose | How it moves |
+| **Engine** | WebGPU · WebGL · DOM · SVG · Canvas | What renders it |
+| **Tempo** | Ambient · Reactive · Cinematic · Playful | How it feels |
+
+The index lives at `taxonomy.html`; the machine-readable mappings are in `assets/taxonomy.json`. The wall supports all four axes at once, plus volume and free-text search.
+
 ## What is in the repository
 
 ```
-index.html            the wall — 61 cards, six volumes, filter + search
+index.html            the wall — 61 cards, six volumes, filter + search + four-axis facets
+taxonomy.html         the classified index — four axes, 7×7 matrix, 61-row ledger
 room.html             lightweight cover page for the Frontier Atlas
-volumes/*.html        six volume pages
+volumes/*.html        six volume pages with an “Indexed as” summary
 sources.html          ledger of all 53 repositories
 notes.html            method, capability notes and rights
 source/<owner>/<repo> complete upstream snapshots
-assets/               shared CSS, filter script, one local Flow preview
+assets/               shared CSS, filter script, one local Flow preview, taxonomy.json
 tools/serve.js        tiny local static server
 SOURCE.md             per-work and per-repository ledger
 ```

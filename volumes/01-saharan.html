@@ -14,7 +14,8 @@
   <header class="mast">
     <a class="brand" href="../index.html"><i></i>Frontier Studio <em>11</em></a>
     <nav>
-      <a href="../index.html#volumes">Volumes</a>
+      <a href="../index.html#volumes" class="on">Volumes</a>
+      <a href="../taxonomy.html">Index</a>
       <a href="../index.html#wall">The 61</a>
       <a href="../sources.html">Sources</a>
       <a href="../notes.html">Notes</a>
@@ -46,8 +47,14 @@
         <span class="vp-label">Preview from the source repository</span>
       </div>
     </section>
+    <div class="vfacets">
+    <span class="vfacets-label">Indexed as</span>
+    <div class="vfacets-row"><em>Form</em><a class="vchip" href="../index.html?form=fluid#wall">Fluid <b>3</b></a><a class="vchip" href="../index.html?form=life#wall">Life <b>2</b></a><a class="vchip" href="../index.html?form=type#wall">Type <b>1</b></a></div>
+    <div class="vfacets-row"><em>Mechanism</em><a class="vchip" href="../index.html?mechanism=generate#wall">Generate <b>3</b></a><a class="vchip" href="../index.html?mechanism=simulate#wall">Simulate <b>3</b></a></div>
+    <a class="vfacets-link" href="../taxonomy.html">All four axes ↗</a>
+  </div>
     <section class="vlist">
-      <div class="grid"><article class="piece" data-volume="01-saharan" data-search="clock saharan shader clock shader time particles a webgl clock whose numerals dissolve into particles; time is drawn rather than pointed at.">
+      <div class="grid"><article class="piece" data-volume="01-saharan" data-form="type" data-mechanism="generate" data-engine="webgpu" data-tempo="ambient" data-search="clock saharan shader clock a webgl clock whose numerals dissolve into particles; time is drawn rather than pointed at. type generate webgpu ambient 字体 生成 webgpu 漫游 shader time particles">
     <a class="plate plate--photo plate--liquid" href="../source/saharan/works/clock/bin/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of Clock">
     <img class="plate-img" src="../source/saharan/works/imgs/clock.png" alt="Clock — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">CL</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -56,16 +63,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Shader clock</span></div>
+      <div class="card-meta"><span>001 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="../source/saharan/works/clock/bin/index.html" target="_blank" rel="noopener">Clock</a></h3>
       <p>A WebGL clock whose numerals dissolve into particles; time is drawn rather than pointed at.</p>
-      <ul class="tags"><li>Shader</li><li>Time</li><li>Particles</li></ul>
+      <div class="specs" style="--fc:#181714">
+        <span><em>Form</em>Type</span>
+        <span><em>Mechanism</em>Generate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="../source/saharan/works/clock/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/clock" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="life universe saharan cellular life automata emergence webgl conway&#39;s game of life as a galaxy: a huge cell field drifting through a dark universe.">
+  </article><article class="piece" data-volume="01-saharan" data-form="life" data-mechanism="generate" data-engine="webgpu" data-tempo="ambient" data-search="life universe saharan cellular life conway&#39;s game of life as a galaxy: a huge cell field drifting through a dark universe. life generate webgpu ambient 生命 生成 webgpu 漫游 automata emergence webgl">
     <a class="plate plate--photo plate--liquid" href="../source/saharan/works/life/bin/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of Life Universe">
     <img class="plate-img" src="../source/saharan/works/imgs/life.png" alt="Life Universe — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">LU</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -74,16 +85,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Cellular life</span></div>
+      <div class="card-meta"><span>002 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="../source/saharan/works/life/bin/index.html" target="_blank" rel="noopener">Life Universe</a></h3>
       <p>Conway&#39;s Game of Life as a galaxy: a huge cell field drifting through a dark universe.</p>
-      <ul class="tags"><li>Automata</li><li>Emergence</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#3f7f52">
+        <span><em>Form</em>Life</span>
+        <span><em>Mechanism</em>Generate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="../source/saharan/works/life/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/life" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="bubbles saharan refraction refraction light webgl soap-film bubbles bend light and colour in real time; every surface is a small lens.">
+  </article><article class="piece" data-volume="01-saharan" data-form="fluid" data-mechanism="simulate" data-engine="webgpu" data-tempo="ambient" data-search="bubbles saharan refraction soap-film bubbles bend light and colour in real time; every surface is a small lens. fluid simulate webgpu ambient 流体 模拟 webgpu 漫游 refraction light webgl">
     <a class="plate plate--photo plate--liquid" href="../source/saharan/works/bubbles/bin/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of Bubbles">
     <img class="plate-img" src="../source/saharan/works/imgs/bubbles.png" alt="Bubbles — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">BU</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -92,16 +107,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Refraction</span></div>
+      <div class="card-meta"><span>003 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="../source/saharan/works/bubbles/bin/index.html" target="_blank" rel="noopener">Bubbles</a></h3>
       <p>Soap-film bubbles bend light and colour in real time; every surface is a small lens.</p>
-      <ul class="tags"><li>Refraction</li><li>Light</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="../source/saharan/works/bubbles/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/bubbles" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="marimo saharan organic growth procedural organic webgl a soft moss-ball ecosystem sways underwater, grown procedurally with no keyframes.">
+  </article><article class="piece" data-volume="01-saharan" data-form="life" data-mechanism="generate" data-engine="webgpu" data-tempo="ambient" data-search="marimo saharan organic growth a soft moss-ball ecosystem sways underwater, grown procedurally with no keyframes. life generate webgpu ambient 生命 生成 webgpu 漫游 procedural organic webgl">
     <a class="plate plate--photo plate--liquid" href="../source/saharan/works/marimo/bin/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Marimo">
     <img class="plate-img" src="../source/saharan/works/imgs/marimo.png" alt="Marimo — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">MA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -110,16 +129,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Organic growth</span></div>
+      <div class="card-meta"><span>004 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="../source/saharan/works/marimo/bin/index.html" target="_blank" rel="noopener">Marimo</a></h3>
       <p>A soft moss-ball ecosystem sways underwater, grown procedurally with no keyframes.</p>
-      <ul class="tags"><li>Procedural</li><li>Organic</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#3f7f52">
+        <span><em>Form</em>Life</span>
+        <span><em>Mechanism</em>Generate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="../source/saharan/works/marimo/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/marimo" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="drops saharan surface tension fluid rain light raindrops hit a dark surface, merge and scatter light: a study in surface tension.">
+  </article><article class="piece" data-volume="01-saharan" data-form="fluid" data-mechanism="simulate" data-engine="webgpu" data-tempo="ambient" data-search="drops saharan surface tension raindrops hit a dark surface, merge and scatter light: a study in surface tension. fluid simulate webgpu ambient 流体 模拟 webgpu 漫游 fluid rain light">
     <a class="plate plate--photo plate--liquid" href="../source/saharan/works/drops/bin/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Drops">
     <img class="plate-img" src="../source/saharan/works/imgs/drops.png" alt="Drops — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">DR</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -128,16 +151,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Surface tension</span></div>
+      <div class="card-meta"><span>005 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="../source/saharan/works/drops/bin/index.html" target="_blank" rel="noopener">Drops</a></h3>
       <p>Raindrops hit a dark surface, merge and scatter light: a study in surface tension.</p>
-      <ul class="tags"><li>Fluid</li><li>Rain</li><li>Light</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="../source/saharan/works/drops/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/drops" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="water saharan caustics caustics shader ocean deep water built from a single fragment shader — caustics, foam and a slow moving surface.">
+  </article><article class="piece" data-volume="01-saharan" data-form="fluid" data-mechanism="simulate" data-engine="webgpu" data-tempo="ambient" data-search="water saharan caustics deep water built from a single fragment shader — caustics, foam and a slow moving surface. fluid simulate webgpu ambient 流体 模拟 webgpu 漫游 caustics shader ocean">
     <a class="plate plate--photo plate--liquid" href="../source/saharan/works/water/bin/index.html" target="_blank" rel="noopener" style="--p1:#22240f;--p2:#7f913d" aria-label="Open the local demo of Water">
     <img class="plate-img" src="../source/saharan/works/imgs/water.png" alt="Water — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">WA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -146,10 +173,14 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Caustics</span></div>
+      <div class="card-meta"><span>006 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="../source/saharan/works/water/bin/index.html" target="_blank" rel="noopener">Water</a></h3>
       <p>Deep water built from a single fragment shader — caustics, foam and a slow moving surface.</p>
-      <ul class="tags"><li>Caustics</li><li>Shader</li><li>Ocean</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="../source/saharan/works/water/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/water" target="_blank" rel="noopener">Source <span>↳</span></a>
@@ -171,6 +202,7 @@
       <p class="fine">61 works from Saharan, David Li, Amanda Ghassaei, Jeantimex and Codrops. Complete source snapshots live in this repository under <code>source/</code>. Everything remains © the original authors; Codrops demos are published under their respective terms. No commercial reuse is implied. <a href="../notes.html">Read the notes</a>.</p>
       <div class="foot-links">
         <a href="../index.html">All volumes</a>
+        <a href="../taxonomy.html">Classified index</a>
         <a href="../sources.html">53 repositories</a>
         <a href="https://bear20252026.github.io/frontier-atlas/" target="_blank" rel="noopener">Frontier Atlas ↗</a>
       </div>

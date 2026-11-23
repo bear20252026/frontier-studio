@@ -20,6 +20,7 @@
     <a class="brand" href="index.html"><i></i>Frontier Studio <em>11</em></a>
     <nav>
       <a href="index.html#volumes" class="on">Volumes</a>
+      <a href="taxonomy.html">Index</a>
       <a href="index.html#wall">The 61</a>
       <a href="sources.html">Sources</a>
       <a href="notes.html">Notes</a>
@@ -30,13 +31,13 @@
     <section class="hero">
     <div class="hero-copy">
       <div>
-        <p class="eyebrow">A new room in Frontier Atlas · 61 works · 53 source repositories</p>
+        <p class="eyebrow">A new room in Frontier Atlas · 61 works · 4 axes</p>
         <h1>The source<br>is the <span class="thin">exhibit.</span></h1>
-        <p class="hero-lede">Four authors and one editorial archive, rebuilt as a place you can walk through. Every card opens a <b>local demo</b>; every demo has its <b>complete repository</b> beside it in this same house.</p>
-        <p class="hero-cn">四个作者、四十一个 Codrops 精选，装进六个分卷。不是链接合集：每条都有完整源码与本地可运行 demo，源码就在本仓 <b>source/</b> 下。</p>
+        <p class="hero-lede">Four authors and one editorial archive, rebuilt as a place you can walk through. Every card opens a <b>local demo</b>; every demo has its <b>complete repository</b> beside it. The wall is now <b>classified</b>: form, mechanism, engine and tempo.</p>
+        <p class="hero-cn">四个作者、四十一个 Codrops 精选，装进六个分卷；61 件作品全部按「形态 / 机制 / 渲染栈 / 气质」四条轴重新分类。每条都有完整源码与本地可运行 demo，源码就在本仓 <b>source/</b> 下。</p>
         <div class="hero-actions">
           <a class="btn btn-dark" href="#volumes">Enter the six volumes <span>↓</span></a>
-          <a class="btn btn-ghost" href="#wall">See all 61 <span>↘</span></a>
+          <a class="btn btn-ghost" href="taxonomy.html">Open the classified index <span>↗</span></a>
         </div>
       </div>
       <div class="jump">
@@ -59,6 +60,13 @@
     <div><b>6</b><span>volumes</span></div>
     <div><b>202<small> MB</small></b><span>upstream source</span></div>
   </div>
+    <section class="axisbar" aria-label="Classification axes">
+    <span class="axisbar-label">Classified on four axes</span>
+    <div class="axis-pills">
+      <a href="taxonomy.html#form"><b>07</b><span>forms</span></a><a href="taxonomy.html#mechanism"><b>07</b><span>mechanisms</span></a><a href="taxonomy.html#engine"><b>05</b><span>engines</span></a><a href="taxonomy.html#tempo"><b>04</b><span>tempos</span></a>
+    </div>
+    <a class="axisbar-link" href="taxonomy.html">Open the classified index <span>↗</span></a>
+  </section>
     <section class="section" id="volumes">
       <div class="sec-head">
         <div class="sec-title"><h2>Six volumes</h2><em>Reading order, not a feed</em></div>
@@ -106,8 +114,8 @@
     </section>
     <section class="section" id="wall">
     <div class="sec-head">
-      <div class="sec-title"><h2>The 61</h2><em>Six volumes · one wall</em></div>
-      <p class="sec-note">Every plate opens the local build. Every Source link opens the copy inside this repository, not the upstream page.</p>
+      <div class="sec-title"><h2>The 61</h2><em>Six volumes · four axes</em></div>
+      <p class="sec-note">Every plate opens the local build. Every Source link opens the copy inside this repository, not the upstream page. <a href="taxonomy.html">Read the index ↗</a></p>
     </div>
     <div class="toolbar">
     <div class="filters" role="group" aria-label="Filter by volume">
@@ -117,12 +125,20 @@
     <label class="search"><span>Find</span><input id="search" type="search" placeholder="fluid, scroll, WebGPU…" autocomplete="off"></label>
     <span class="result" id="result">61 / 61</span>
   </div>
+  <div class="classbar" aria-label="Filter by classification">
+    <span class="classbar-label">Classify</span>
+    <label class="facet"><span>Form</span><select id="f-form"><option value="all">Any form · 61</option><option value="fluid">Fluid · 12</option><option value="life">Life · 4</option><option value="structure">Structure · 3</option><option value="interface">Interface · 10</option><option value="image">Image · 22</option><option value="type">Type · 3</option><option value="space">Space · 7</option></select></label>
+    <label class="facet"><span>Mechanism</span><select id="f-mechanism"><option value="all">Any mechanism · 61</option><option value="simulate">Simulate · 12</option><option value="generate">Generate · 5</option><option value="scroll">Scroll · 12</option><option value="hover">Hover · 12</option><option value="transition">Transition · 9</option><option value="navigate">Navigate · 5</option><option value="compose">Compose · 6</option></select></label>
+    <label class="facet"><span>Engine</span><select id="f-engine"><option value="all">Any engine · 61</option><option value="webgpu">WebGPU · 9</option><option value="webgl">WebGL · 11</option><option value="dom">DOM · 35</option><option value="svg">SVG · 3</option><option value="canvas">Canvas · 3</option></select></label>
+    <label class="facet"><span>Tempo</span><select id="f-tempo"><option value="all">Any tempo · 61</option><option value="ambient">Ambient · 13</option><option value="reactive">Reactive · 8</option><option value="cinematic">Cinematic · 21</option><option value="playful">Playful · 19</option></select></label>
+    <button class="reset" id="reset" type="button">Reset</button>
+  </div>
     <section class="vsection" id="v01" data-volume="01-saharan">
       <div class="vhead">
         <div class="vhead-l"><span class="vn">Volume 01</span><h2>Liquid light</h2><span class="vsub">Saharan / Oimo · 6 works</span></div>
         <a href="volumes/01-saharan.html">Open volume ↗</a>
       </div>
-      <div class="grid"><article class="piece" data-volume="01-saharan" data-search="clock saharan shader clock shader time particles a webgl clock whose numerals dissolve into particles; time is drawn rather than pointed at.">
+      <div class="grid"><article class="piece" data-volume="01-saharan" data-form="type" data-mechanism="generate" data-engine="webgpu" data-tempo="ambient" data-search="clock saharan shader clock a webgl clock whose numerals dissolve into particles; time is drawn rather than pointed at. type generate webgpu ambient 字体 生成 webgpu 漫游 shader time particles">
     <a class="plate plate--photo plate--liquid" href="source/saharan/works/clock/bin/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of Clock">
     <img class="plate-img" src="source/saharan/works/imgs/clock.png" alt="Clock — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">CL</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -131,16 +147,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Shader clock</span></div>
+      <div class="card-meta"><span>001 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="source/saharan/works/clock/bin/index.html" target="_blank" rel="noopener">Clock</a></h3>
       <p>A WebGL clock whose numerals dissolve into particles; time is drawn rather than pointed at.</p>
-      <ul class="tags"><li>Shader</li><li>Time</li><li>Particles</li></ul>
+      <div class="specs" style="--fc:#181714">
+        <span><em>Form</em>Type</span>
+        <span><em>Mechanism</em>Generate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/saharan/works/clock/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/clock" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="life universe saharan cellular life automata emergence webgl conway&#39;s game of life as a galaxy: a huge cell field drifting through a dark universe.">
+  </article><article class="piece" data-volume="01-saharan" data-form="life" data-mechanism="generate" data-engine="webgpu" data-tempo="ambient" data-search="life universe saharan cellular life conway&#39;s game of life as a galaxy: a huge cell field drifting through a dark universe. life generate webgpu ambient 生命 生成 webgpu 漫游 automata emergence webgl">
     <a class="plate plate--photo plate--liquid" href="source/saharan/works/life/bin/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of Life Universe">
     <img class="plate-img" src="source/saharan/works/imgs/life.png" alt="Life Universe — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">LU</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -149,16 +169,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Cellular life</span></div>
+      <div class="card-meta"><span>002 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="source/saharan/works/life/bin/index.html" target="_blank" rel="noopener">Life Universe</a></h3>
       <p>Conway&#39;s Game of Life as a galaxy: a huge cell field drifting through a dark universe.</p>
-      <ul class="tags"><li>Automata</li><li>Emergence</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#3f7f52">
+        <span><em>Form</em>Life</span>
+        <span><em>Mechanism</em>Generate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/saharan/works/life/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/life" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="bubbles saharan refraction refraction light webgl soap-film bubbles bend light and colour in real time; every surface is a small lens.">
+  </article><article class="piece" data-volume="01-saharan" data-form="fluid" data-mechanism="simulate" data-engine="webgpu" data-tempo="ambient" data-search="bubbles saharan refraction soap-film bubbles bend light and colour in real time; every surface is a small lens. fluid simulate webgpu ambient 流体 模拟 webgpu 漫游 refraction light webgl">
     <a class="plate plate--photo plate--liquid" href="source/saharan/works/bubbles/bin/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of Bubbles">
     <img class="plate-img" src="source/saharan/works/imgs/bubbles.png" alt="Bubbles — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">BU</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -167,16 +191,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Refraction</span></div>
+      <div class="card-meta"><span>003 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="source/saharan/works/bubbles/bin/index.html" target="_blank" rel="noopener">Bubbles</a></h3>
       <p>Soap-film bubbles bend light and colour in real time; every surface is a small lens.</p>
-      <ul class="tags"><li>Refraction</li><li>Light</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/saharan/works/bubbles/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/bubbles" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="marimo saharan organic growth procedural organic webgl a soft moss-ball ecosystem sways underwater, grown procedurally with no keyframes.">
+  </article><article class="piece" data-volume="01-saharan" data-form="life" data-mechanism="generate" data-engine="webgpu" data-tempo="ambient" data-search="marimo saharan organic growth a soft moss-ball ecosystem sways underwater, grown procedurally with no keyframes. life generate webgpu ambient 生命 生成 webgpu 漫游 procedural organic webgl">
     <a class="plate plate--photo plate--liquid" href="source/saharan/works/marimo/bin/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Marimo">
     <img class="plate-img" src="source/saharan/works/imgs/marimo.png" alt="Marimo — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">MA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -185,16 +213,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Organic growth</span></div>
+      <div class="card-meta"><span>004 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="source/saharan/works/marimo/bin/index.html" target="_blank" rel="noopener">Marimo</a></h3>
       <p>A soft moss-ball ecosystem sways underwater, grown procedurally with no keyframes.</p>
-      <ul class="tags"><li>Procedural</li><li>Organic</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#3f7f52">
+        <span><em>Form</em>Life</span>
+        <span><em>Mechanism</em>Generate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/saharan/works/marimo/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/marimo" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="drops saharan surface tension fluid rain light raindrops hit a dark surface, merge and scatter light: a study in surface tension.">
+  </article><article class="piece" data-volume="01-saharan" data-form="fluid" data-mechanism="simulate" data-engine="webgpu" data-tempo="ambient" data-search="drops saharan surface tension raindrops hit a dark surface, merge and scatter light: a study in surface tension. fluid simulate webgpu ambient 流体 模拟 webgpu 漫游 fluid rain light">
     <a class="plate plate--photo plate--liquid" href="source/saharan/works/drops/bin/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Drops">
     <img class="plate-img" src="source/saharan/works/imgs/drops.png" alt="Drops — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">DR</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -203,16 +235,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Surface tension</span></div>
+      <div class="card-meta"><span>005 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="source/saharan/works/drops/bin/index.html" target="_blank" rel="noopener">Drops</a></h3>
       <p>Raindrops hit a dark surface, merge and scatter light: a study in surface tension.</p>
-      <ul class="tags"><li>Fluid</li><li>Rain</li><li>Light</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/saharan/works/drops/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/drops" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="01-saharan" data-search="water saharan caustics caustics shader ocean deep water built from a single fragment shader — caustics, foam and a slow moving surface.">
+  </article><article class="piece" data-volume="01-saharan" data-form="fluid" data-mechanism="simulate" data-engine="webgpu" data-tempo="ambient" data-search="water saharan caustics deep water built from a single fragment shader — caustics, foam and a slow moving surface. fluid simulate webgpu ambient 流体 模拟 webgpu 漫游 caustics shader ocean">
     <a class="plate plate--photo plate--liquid" href="source/saharan/works/water/bin/index.html" target="_blank" rel="noopener" style="--p1:#22240f;--p2:#7f913d" aria-label="Open the local demo of Water">
     <img class="plate-img" src="source/saharan/works/imgs/water.png" alt="Water — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">WA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -221,10 +257,14 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>01 · Saharan</span><span>Caustics</span></div>
+      <div class="card-meta"><span>006 · 01 / Saharan</span><span>Ambient</span></div>
       <h3><a href="source/saharan/works/water/bin/index.html" target="_blank" rel="noopener">Water</a></h3>
       <p>Deep water built from a single fragment shader — caustics, foam and a slow moving surface.</p>
-      <ul class="tags"><li>Caustics</li><li>Shader</li><li>Ocean</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/saharan/works/water/bin/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/saharan/works/water" target="_blank" rel="noopener">Source <span>↳</span></a>
@@ -236,7 +276,7 @@
         <div class="vhead-l"><span class="vn">Volume 02</span><h2>The fluid canon</h2><span class="vsub">David Li · 4 works</span></div>
         <a href="volumes/02-david-li.html">Open volume ↗</a>
       </div>
-      <div class="grid"><article class="piece" data-volume="02-david-li" data-search="paint david li fluid paint fluid interaction webgl fluid paint you can drag across the canvas; pigment advects, bleeds and never dries.">
+      <div class="grid"><article class="piece" data-volume="02-david-li" data-form="fluid" data-mechanism="simulate" data-engine="webgl" data-tempo="reactive" data-search="paint david li fluid paint fluid paint you can drag across the canvas; pigment advects, bleeds and never dries. fluid simulate webgl reactive 流体 模拟 webgl 响应 fluid interaction webgl">
     <a class="plate plate--gen plate--flow" href="source/dli/paint/index.html" target="_blank" rel="noopener" style="--p1:#101c2b;--p2:#3f7fbf" aria-label="Open the local demo of Paint">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">PA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -245,16 +285,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>02 · David Li</span><span>Fluid paint</span></div>
+      <div class="card-meta"><span>007 · 02 / David Li</span><span>Reactive</span></div>
       <h3><a href="source/dli/paint/index.html" target="_blank" rel="noopener">Paint</a></h3>
       <p>Fluid paint you can drag across the canvas; pigment advects, bleeds and never dries.</p>
-      <ul class="tags"><li>Fluid</li><li>Interaction</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/dli/paint/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/dli/paint" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="02-david-li" data-search="flow david li particle field particles noise interaction a particle field follows curl noise; sliders expose the forces behind the current.">
+  </article><article class="piece" data-volume="02-david-li" data-form="fluid" data-mechanism="simulate" data-engine="webgl" data-tempo="ambient" data-search="flow david li particle field a particle field follows curl noise; sliders expose the forces behind the current. fluid simulate webgl ambient 流体 模拟 webgl 漫游 particles noise interaction">
     <a class="plate plate--photo plate--flow" href="source/dli/flow/index.html" target="_blank" rel="noopener" style="--p1:#2a1020;--p2:#d14b6a" aria-label="Open the local demo of Flow">
     <img class="plate-img" src="assets/thumbs/flow.png" alt="Flow — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">FL</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -263,16 +307,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>02 · David Li</span><span>Particle field</span></div>
+      <div class="card-meta"><span>008 · 02 / David Li</span><span>Ambient</span></div>
       <h3><a href="source/dli/flow/index.html" target="_blank" rel="noopener">Flow</a></h3>
       <p>A particle field follows curl noise; sliders expose the forces behind the current.</p>
-      <ul class="tags"><li>Particles</li><li>Noise</li><li>Interaction</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/dli/flow/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/dli/flow" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="02-david-li" data-search="waves david li wave field ocean height field webgl a height-field ocean with a movable camera and a wall of controls; the original webgl wave lab.">
+  </article><article class="piece" data-volume="02-david-li" data-form="fluid" data-mechanism="simulate" data-engine="webgl" data-tempo="ambient" data-search="waves david li wave field a height-field ocean with a movable camera and a wall of controls; the original webgl wave lab. fluid simulate webgl ambient 流体 模拟 webgl 漫游 ocean height field webgl">
     <a class="plate plate--gen plate--flow" href="source/dli/waves/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of Waves">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">WA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -281,16 +329,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>02 · David Li</span><span>Wave field</span></div>
+      <div class="card-meta"><span>009 · 02 / David Li</span><span>Ambient</span></div>
       <h3><a href="source/dli/waves/index.html" target="_blank" rel="noopener">Waves</a></h3>
       <p>A height-field ocean with a movable camera and a wall of controls; the original WebGL wave lab.</p>
-      <ul class="tags"><li>Ocean</li><li>Height field</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/dli/waves/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/dli/waves" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="02-david-li" data-search="fluid david li navier–stokes fluid solver gpu webgl david li&#39;s classic navier–stokes solver, rendered as ink suspended in a glass box.">
+  </article><article class="piece" data-volume="02-david-li" data-form="fluid" data-mechanism="simulate" data-engine="webgl" data-tempo="ambient" data-search="fluid david li navier–stokes david li&#39;s classic navier–stokes solver, rendered as ink suspended in a glass box. fluid simulate webgl ambient 流体 模拟 webgl 漫游 fluid solver gpu webgl">
     <a class="plate plate--gen plate--flow" href="source/dli/fluid/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of Fluid">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">FL</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -299,10 +351,14 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>02 · David Li</span><span>Navier–Stokes</span></div>
+      <div class="card-meta"><span>010 · 02 / David Li</span><span>Ambient</span></div>
       <h3><a href="source/dli/fluid/index.html" target="_blank" rel="noopener">Fluid</a></h3>
       <p>David Li&#39;s classic Navier–Stokes solver, rendered as ink suspended in a glass box.</p>
-      <ul class="tags"><li>Fluid solver</li><li>GPU</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/dli/fluid/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/dli/fluid" target="_blank" rel="noopener">Source <span>↳</span></a>
@@ -314,7 +370,7 @@
         <div class="vhead-l"><span class="vn">Volume 03</span><h2>The simulation lab</h2><span class="vsub">Amanda Ghassaei · 6 works</span></div>
         <a href="volumes/03-amanda-ghassaei.html">Open volume ↗</a>
       </div>
-      <div class="grid"><article class="piece" data-volume="03-amanda-ghassaei" data-search="vortex shedding amanda ghassaei vortex street cfd vortices gpu a gpu fluid experiment that makes a cylinder shed alternating vortices, the way a river does.">
+      <div class="grid"><article class="piece" data-volume="03-amanda-ghassaei" data-form="fluid" data-mechanism="simulate" data-engine="webgl" data-tempo="reactive" data-search="vortex shedding amanda ghassaei vortex street a gpu fluid experiment that makes a cylinder shed alternating vortices, the way a river does. fluid simulate webgl reactive 流体 模拟 webgl 响应 cfd vortices gpu">
     <a class="plate plate--photo plate--grid" href="source/amandaghassaei/VortexShedding/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of Vortex Shedding">
     <img class="plate-img" src="source/amandaghassaei/VortexShedding/img1.jpg" alt="Vortex Shedding — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">VS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -323,16 +379,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>03 · Amanda Ghassaei</span><span>Vortex street</span></div>
+      <div class="card-meta"><span>011 · 03 / Amanda Ghassaei</span><span>Reactive</span></div>
       <h3><a href="source/amandaghassaei/VortexShedding/index.html" target="_blank" rel="noopener">Vortex Shedding</a></h3>
       <p>A GPU fluid experiment that makes a cylinder shed alternating vortices, the way a river does.</p>
-      <ul class="tags"><li>CFD</li><li>Vortices</li><li>GPU</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/amandaghassaei/VortexShedding/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/amandaghassaei/VortexShedding" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="03-amanda-ghassaei" data-search="origami simulator amanda ghassaei origami origami simulation webgl realtime webgl origami: crease patterns fold, strain maps bloom, and paper becomes structure.">
+  </article><article class="piece" data-volume="03-amanda-ghassaei" data-form="structure" data-mechanism="simulate" data-engine="webgl" data-tempo="reactive" data-search="origami simulator amanda ghassaei origami realtime webgl origami: crease patterns fold, strain maps bloom, and paper becomes structure. structure simulate webgl reactive 结构 模拟 webgl 响应 origami simulation webgl">
     <a class="plate plate--photo plate--grid" href="source/amandaghassaei/OrigamiSimulator/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Origami Simulator">
     <img class="plate-img" src="source/amandaghassaei/OrigamiSimulator/assets/hyparColor.png" alt="Origami Simulator — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">OS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -341,16 +401,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>03 · Amanda Ghassaei</span><span>Origami</span></div>
+      <div class="card-meta"><span>012 · 03 / Amanda Ghassaei</span><span>Reactive</span></div>
       <h3><a href="source/amandaghassaei/OrigamiSimulator/index.html" target="_blank" rel="noopener">Origami Simulator</a></h3>
       <p>Realtime WebGL origami: crease patterns fold, strain maps bloom, and paper becomes structure.</p>
-      <ul class="tags"><li>Origami</li><li>Simulation</li><li>WebGL</li></ul>
+      <div class="specs" style="--fc:#b7672f">
+        <span><em>Form</em>Structure</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/amandaghassaei/OrigamiSimulator/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/amandaghassaei/OrigamiSimulator" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="03-amanda-ghassaei" data-search="fluid simulation amanda ghassaei gpu-io gpu-io fluid compute the gpu-io fluid example: dye, velocity and pressure ping-ponging through framebuffers.">
+  </article><article class="piece" data-volume="03-amanda-ghassaei" data-form="fluid" data-mechanism="simulate" data-engine="webgl" data-tempo="reactive" data-search="fluid simulation amanda ghassaei gpu-io the gpu-io fluid example: dye, velocity and pressure ping-ponging through framebuffers. fluid simulate webgl reactive 流体 模拟 webgl 响应 gpu-io fluid compute">
     <a class="plate plate--photo plate--grid" href="source/amandaghassaei/gpu-io/examples/fluid/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Fluid Simulation">
     <img class="plate-img" src="source/amandaghassaei/gpu-io/examples/fluid/main.png" alt="Fluid Simulation — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">FS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -359,16 +423,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>03 · Amanda Ghassaei</span><span>gpu-io</span></div>
+      <div class="card-meta"><span>013 · 03 / Amanda Ghassaei</span><span>Reactive</span></div>
       <h3><a href="source/amandaghassaei/gpu-io/examples/fluid/index.html" target="_blank" rel="noopener">Fluid Simulation</a></h3>
       <p>The gpu-io fluid example: dye, velocity and pressure ping-ponging through framebuffers.</p>
-      <ul class="tags"><li>gpu-io</li><li>Fluid</li><li>Compute</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/amandaghassaei/gpu-io/examples/fluid/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/amandaghassaei/gpu-io/examples/fluid" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="03-amanda-ghassaei" data-search="physarum amanda ghassaei agent systems agents emergence gpu-io slime-mould agents leave trails that become transport networks; a classic of agent-based art.">
+  </article><article class="piece" data-volume="03-amanda-ghassaei" data-form="life" data-mechanism="generate" data-engine="webgl" data-tempo="ambient" data-search="physarum amanda ghassaei agent systems slime-mould agents leave trails that become transport networks; a classic of agent-based art. life generate webgl ambient 生命 生成 webgl 漫游 agents emergence gpu-io">
     <a class="plate plate--photo plate--grid" href="source/amandaghassaei/gpu-io/examples/physarum/index.html" target="_blank" rel="noopener" style="--p1:#22240f;--p2:#7f913d" aria-label="Open the local demo of Physarum">
     <img class="plate-img" src="source/amandaghassaei/gpu-io/examples/physarum/main.png" alt="Physarum — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">PH</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -377,16 +445,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>03 · Amanda Ghassaei</span><span>Agent systems</span></div>
+      <div class="card-meta"><span>014 · 03 / Amanda Ghassaei</span><span>Ambient</span></div>
       <h3><a href="source/amandaghassaei/gpu-io/examples/physarum/index.html" target="_blank" rel="noopener">Physarum</a></h3>
       <p>Slime-mould agents leave trails that become transport networks; a classic of agent-based art.</p>
-      <ul class="tags"><li>Agents</li><li>Emergence</li><li>gpu-io</li></ul>
+      <div class="specs" style="--fc:#3f7f52">
+        <span><em>Form</em>Life</span>
+        <span><em>Mechanism</em>Generate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/amandaghassaei/gpu-io/examples/physarum/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/amandaghassaei/gpu-io/examples/physarum" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="03-amanda-ghassaei" data-search="reaction diffusion amanda ghassaei reaction–diffusion gray–scott pattern gpu-io gray–scott reaction–diffusion on the gpu, coral-like patterns growing from a single seed.">
+  </article><article class="piece" data-volume="03-amanda-ghassaei" data-form="life" data-mechanism="generate" data-engine="webgl" data-tempo="ambient" data-search="reaction diffusion amanda ghassaei reaction–diffusion gray–scott reaction–diffusion on the gpu, coral-like patterns growing from a single seed. life generate webgl ambient 生命 生成 webgl 漫游 gray–scott pattern gpu-io">
     <a class="plate plate--photo plate--grid" href="source/amandaghassaei/gpu-io/examples/reaction-diffusion/index.html" target="_blank" rel="noopener" style="--p1:#101c2b;--p2:#3f7fbf" aria-label="Open the local demo of Reaction Diffusion">
     <img class="plate-img" src="source/amandaghassaei/gpu-io/examples/reaction-diffusion/main.png" alt="Reaction Diffusion — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">RD</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -395,16 +467,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>03 · Amanda Ghassaei</span><span>Reaction–diffusion</span></div>
+      <div class="card-meta"><span>015 · 03 / Amanda Ghassaei</span><span>Ambient</span></div>
       <h3><a href="source/amandaghassaei/gpu-io/examples/reaction-diffusion/index.html" target="_blank" rel="noopener">Reaction Diffusion</a></h3>
       <p>Gray–Scott reaction–diffusion on the GPU, coral-like patterns growing from a single seed.</p>
-      <ul class="tags"><li>Gray–Scott</li><li>Pattern</li><li>gpu-io</li></ul>
+      <div class="specs" style="--fc:#3f7f52">
+        <span><em>Form</em>Life</span>
+        <span><em>Mechanism</em>Generate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/amandaghassaei/gpu-io/examples/reaction-diffusion/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/amandaghassaei/gpu-io/examples/reaction-diffusion" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="03-amanda-ghassaei" data-search="wave 2d amanda ghassaei wave equation waves compute gpu-io a 2d wave equation solved in a shader; click to send ripples through the field.">
+  </article><article class="piece" data-volume="03-amanda-ghassaei" data-form="fluid" data-mechanism="simulate" data-engine="webgl" data-tempo="reactive" data-search="wave 2d amanda ghassaei wave equation a 2d wave equation solved in a shader; click to send ripples through the field. fluid simulate webgl reactive 流体 模拟 webgl 响应 waves compute gpu-io">
     <a class="plate plate--photo plate--grid" href="source/amandaghassaei/gpu-io/examples/wave2d/index.html" target="_blank" rel="noopener" style="--p1:#2a1020;--p2:#d14b6a" aria-label="Open the local demo of Wave 2D">
     <img class="plate-img" src="source/amandaghassaei/gpu-io/examples/wave2d/main.png" alt="Wave 2D — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">W2</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -413,10 +489,14 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>03 · Amanda Ghassaei</span><span>Wave equation</span></div>
+      <div class="card-meta"><span>016 · 03 / Amanda Ghassaei</span><span>Reactive</span></div>
       <h3><a href="source/amandaghassaei/gpu-io/examples/wave2d/index.html" target="_blank" rel="noopener">Wave 2D</a></h3>
       <p>A 2D wave equation solved in a shader; click to send ripples through the field.</p>
-      <ul class="tags"><li>Waves</li><li>Compute</li><li>gpu-io</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/amandaghassaei/gpu-io/examples/wave2d/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/amandaghassaei/gpu-io/examples/wave2d" target="_blank" rel="noopener">Source <span>↳</span></a>
@@ -428,7 +508,7 @@
         <div class="vhead-l"><span class="vn">Volume 04</span><h2>WebGPU weather</h2><span class="vsub">Jeantimex · 4 works</span></div>
         <a href="volumes/04-jeantimex.html">Open volume ↗</a>
       </div>
-      <div class="grid"><article class="piece" data-volume="04-jeantimex" data-search="flight tracker jeantimex data globe globe data three.js a globe of live flight paths, drawn in three.js over a dark topographic world.">
+      <div class="grid"><article class="piece" data-volume="04-jeantimex" data-form="space" data-mechanism="navigate" data-engine="webgl" data-tempo="cinematic" data-search="flight tracker jeantimex data globe a globe of live flight paths, drawn in three.js over a dark topographic world. space navigate webgl cinematic 空间 导航 webgl 电影感 globe data three.js">
     <a class="plate plate--gen plate--lens" href="source/jeantimex/flights-tracker/dist/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of Flight Tracker">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">FT</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -437,16 +517,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>04 · Jeantimex</span><span>Data globe</span></div>
+      <div class="card-meta"><span>017 · 04 / Jeantimex</span><span>Cinematic</span></div>
       <h3><a href="source/jeantimex/flights-tracker/dist/index.html" target="_blank" rel="noopener">Flight Tracker</a></h3>
       <p>A globe of live flight paths, drawn in three.js over a dark topographic world.</p>
-      <ul class="tags"><li>Globe</li><li>Data</li><li>three.js</li></ul>
+      <div class="specs" style="--fc:#14867a">
+        <span><em>Form</em>Space</span>
+        <span><em>Mechanism</em>Navigate</span>
+        <span><em>Engine</em>WebGL</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/jeantimex/flights-tracker/dist/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/jeantimex/flights-tracker" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="04-jeantimex" data-search="webgpu water jeantimex webgpu webgpu water refraction evan wallace&#39;s water rewritten for webgpu: refraction, reflection and a draggable light.">
+  </article><article class="piece" data-volume="04-jeantimex" data-form="fluid" data-mechanism="simulate" data-engine="webgpu" data-tempo="ambient" data-search="webgpu water jeantimex webgpu evan wallace&#39;s water rewritten for webgpu: refraction, reflection and a draggable light. fluid simulate webgpu ambient 流体 模拟 webgpu 漫游 webgpu water refraction">
     <a class="plate plate--gen plate--lens" href="source/jeantimex/webgpu-water/dist/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of WebGPU Water">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">WW</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -455,16 +539,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>04 · Jeantimex</span><span>WebGPU</span></div>
+      <div class="card-meta"><span>018 · 04 / Jeantimex</span><span>Ambient</span></div>
       <h3><a href="source/jeantimex/webgpu-water/dist/index.html" target="_blank" rel="noopener">WebGPU Water</a></h3>
       <p>Evan Wallace&#39;s water rewritten for WebGPU: refraction, reflection and a draggable light.</p>
-      <ul class="tags"><li>WebGPU</li><li>Water</li><li>Refraction</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Simulate</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/jeantimex/webgpu-water/dist/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/jeantimex/webgpu-water" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="04-jeantimex" data-search="lenticular lens jeantimex optics webgpu lens optics a webgpu lenticular print: tilt the lens and the image shifts between frames.">
+  </article><article class="piece" data-volume="04-jeantimex" data-form="structure" data-mechanism="hover" data-engine="webgpu" data-tempo="reactive" data-search="lenticular lens jeantimex optics a webgpu lenticular print: tilt the lens and the image shifts between frames. structure hover webgpu reactive 结构 悬停 webgpu 响应 webgpu lens optics">
     <a class="plate plate--gen plate--lens" href="source/jeantimex/lenticular-lens/dist/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of Lenticular Lens">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">LL</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -473,16 +561,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>04 · Jeantimex</span><span>Optics</span></div>
+      <div class="card-meta"><span>019 · 04 / Jeantimex</span><span>Reactive</span></div>
       <h3><a href="source/jeantimex/lenticular-lens/dist/index.html" target="_blank" rel="noopener">Lenticular Lens</a></h3>
       <p>A WebGPU lenticular print: tilt the lens and the image shifts between frames.</p>
-      <ul class="tags"><li>WebGPU</li><li>Lens</li><li>Optics</li></ul>
+      <div class="specs" style="--fc:#b7672f">
+        <span><em>Form</em>Structure</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/jeantimex/lenticular-lens/dist/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/jeantimex/lenticular-lens" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="04-jeantimex" data-search="raindrop jeantimex webgpu webgpu rain light rain on a window, refracted through a webgpu surface: a study in droplets and light.">
+  </article><article class="piece" data-volume="04-jeantimex" data-form="fluid" data-mechanism="hover" data-engine="webgpu" data-tempo="ambient" data-search="raindrop jeantimex webgpu rain on a window, refracted through a webgpu surface: a study in droplets and light. fluid hover webgpu ambient 流体 悬停 webgpu 漫游 webgpu rain light">
     <a class="plate plate--gen plate--lens" href="source/jeantimex/raindrop/dist/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Raindrop">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">RA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -491,10 +583,14 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>04 · Jeantimex</span><span>WebGPU</span></div>
+      <div class="card-meta"><span>020 · 04 / Jeantimex</span><span>Ambient</span></div>
       <h3><a href="source/jeantimex/raindrop/dist/index.html" target="_blank" rel="noopener">Raindrop</a></h3>
       <p>Rain on a window, refracted through a WebGPU surface: a study in droplets and light.</p>
-      <ul class="tags"><li>WebGPU</li><li>Rain</li><li>Light</li></ul>
+      <div class="specs" style="--fc:#2b36ff">
+        <span><em>Form</em>Fluid</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>WebGPU</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/jeantimex/raindrop/dist/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/jeantimex/raindrop" target="_blank" rel="noopener">Source <span>↳</span></a>
@@ -506,7 +602,7 @@
         <div class="vhead-l"><span class="vn">Volume 05</span><h2>Motion studies</h2><span class="vsub">Codrops · Motion · 14 works</span></div>
         <a href="volumes/05-codrops-motion.html">Open volume ↗</a>
       </div>
-      <div class="grid"><article class="piece" data-volume="05-codrops-motion" data-search="fullscreen page transitions codrops page transitions fullscreen transition layout full-bleed pages slide over each other; the transition itself becomes the navigation.">
+      <div class="grid"><article class="piece" data-volume="05-codrops-motion" data-form="image" data-mechanism="transition" data-engine="dom" data-tempo="cinematic" data-search="fullscreen page transitions codrops page transitions full-bleed pages slide over each other; the transition itself becomes the navigation. image transition dom cinematic 图像 转场 dom / css 电影感 fullscreen transition layout">
     <a class="plate plate--gen plate--frame" href="source/codrops/FullscreenLayoutPageTransitions/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Fullscreen Page Transitions">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">FP</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -515,16 +611,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Page transitions</span></div>
+      <div class="card-meta"><span>021 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/FullscreenLayoutPageTransitions/index.html" target="_blank" rel="noopener">Fullscreen Page Transitions</a></h3>
       <p>Full-bleed pages slide over each other; the transition itself becomes the navigation.</p>
-      <ul class="tags"><li>Fullscreen</li><li>Transition</li><li>Layout</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/FullscreenLayoutPageTransitions/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/FullscreenLayoutPageTransitions" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="morphing devices codrops morph morph svg devices phone, tablet and monitor shapes morph into each other as one continuous object.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="structure" data-mechanism="transition" data-engine="svg" data-tempo="playful" data-search="morphing devices codrops morph phone, tablet and monitor shapes morph into each other as one continuous object. structure transition svg playful 结构 转场 svg 游戏感 morph svg devices">
     <a class="plate plate--gen plate--type plate--type-wide" href="source/codrops/MorphingDevices/index.html" target="_blank" rel="noopener" style="--p1:#22240f;--p2:#7f913d" aria-label="Open the local demo of Morphing Devices">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">MD</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -533,16 +633,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Morph</span></div>
+      <div class="card-meta"><span>022 · 05 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/MorphingDevices/index.html" target="_blank" rel="noopener">Morphing Devices</a></h3>
       <p>Phone, tablet and monitor shapes morph into each other as one continuous object.</p>
-      <ul class="tags"><li>Morph</li><li>SVG</li><li>Devices</li></ul>
+      <div class="specs" style="--fc:#b7672f">
+        <span><em>Form</em>Structure</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>SVG</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/MorphingDevices/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/MorphingDevices" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="creative buttons codrops button set buttons css hover a set of buttons that answer the cursor with fills, borders and small physics.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="interface" data-mechanism="hover" data-engine="dom" data-tempo="playful" data-search="creative buttons codrops button set a set of buttons that answer the cursor with fills, borders and small physics. interface hover dom playful 界面 悬停 dom / css 游戏感 buttons css hover">
     <a class="plate plate--gen plate--frame plate--frame-alt" href="source/codrops/CreativeButtons/index.html" target="_blank" rel="noopener" style="--p1:#101c2b;--p2:#3f7fbf" aria-label="Open the local demo of Creative Buttons">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">CB</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -551,16 +655,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Button set</span></div>
+      <div class="card-meta"><span>023 · 05 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/CreativeButtons/index.html" target="_blank" rel="noopener">Creative Buttons</a></h3>
       <p>A set of buttons that answer the cursor with fills, borders and small physics.</p>
-      <ul class="tags"><li>Buttons</li><li>CSS</li><li>Hover</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/CreativeButtons/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/CreativeButtons" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="how to create a cover page transition codrops cover transition cover transition reveal a cover lifts, folds and reveals the next page: a title sequence for a website.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="image" data-mechanism="transition" data-engine="dom" data-tempo="cinematic" data-search="how to create a cover page transition codrops cover transition a cover lifts, folds and reveals the next page: a title sequence for a website. image transition dom cinematic 图像 转场 dom / css 电影感 cover transition reveal">
     <a class="plate plate--photo plate--type plate--type-stack" href="source/codrops/CoverPageTransition/dist/index.html" target="_blank" rel="noopener" style="--p1:#2a1020;--p2:#d14b6a" aria-label="Open the local demo of How to Create a Cover Page Transition">
     <img class="plate-img" src="source/codrops/CoverPageTransition/src/img/2_big.jpg" alt="How to Create a Cover Page Transition — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">HT</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -569,16 +677,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Cover transition</span></div>
+      <div class="card-meta"><span>024 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/CoverPageTransition/dist/index.html" target="_blank" rel="noopener">How to Create a Cover Page Transition</a></h3>
       <p>A cover lifts, folds and reveals the next page: a title sequence for a website.</p>
-      <ul class="tags"><li>Cover</li><li>Transition</li><li>Reveal</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/CoverPageTransition/dist/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/CoverPageTransition" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="3d perspective glitch hover effect codrops glitch glitch hover perspective rgb channels split and scanlines tear as the image tilts in perspective.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="image" data-mechanism="hover" data-engine="dom" data-tempo="playful" data-search="3d perspective glitch hover effect codrops glitch rgb channels split and scanlines tear as the image tilts in perspective. image hover dom playful 图像 悬停 dom / css 游戏感 glitch hover perspective">
     <a class="plate plate--gen plate--type" href="source/codrops/GlitchPerspective/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of 3D Perspective Glitch Hover Effect">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">3P</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -587,16 +699,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Glitch</span></div>
+      <div class="card-meta"><span>025 · 05 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/GlitchPerspective/index.html" target="_blank" rel="noopener">3D Perspective Glitch Hover Effect</a></h3>
       <p>RGB channels split and scanlines tear as the image tilts in perspective.</p>
-      <ul class="tags"><li>Glitch</li><li>Hover</li><li>Perspective</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/GlitchPerspective/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/GlitchPerspective" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="smooth panel scroll codrops panel scroll scroll panels clip panels scroll at different speeds with clipped reveals and sticky captions.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="image" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="smooth panel scroll codrops panel scroll panels scroll at different speeds with clipped reveals and sticky captions. image scroll dom cinematic 图像 滚动 dom / css 电影感 scroll panels clip">
     <a class="plate plate--gen plate--frame" href="source/codrops/ScrollPanels/dist/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of Smooth Panel Scroll">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">SP</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -605,16 +721,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Panel scroll</span></div>
+      <div class="card-meta"><span>026 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/ScrollPanels/dist/index.html" target="_blank" rel="noopener">Smooth Panel Scroll</a></h3>
       <p>Panels scroll at different speeds with clipped reveals and sticky captions.</p>
-      <ul class="tags"><li>Scroll</li><li>Panels</li><li>Clip</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/ScrollPanels/dist/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/ScrollPanels" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="on-scroll typography animations codrops scroll type typography scroll kinetic type enters line by line, word by word, driven by scroll position.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="type" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="on-scroll typography animations codrops scroll type type enters line by line, word by word, driven by scroll position. type scroll dom cinematic 字体 滚动 dom / css 电影感 typography scroll kinetic">
     <a class="plate plate--gen plate--type plate--type-wide" href="source/codrops/OnScrollTypographyAnimations/dist/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of On-Scroll Typography Animations">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">OS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -623,16 +743,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Scroll type</span></div>
+      <div class="card-meta"><span>027 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/OnScrollTypographyAnimations/dist/index.html" target="_blank" rel="noopener">On-Scroll Typography Animations</a></h3>
       <p>Type enters line by line, word by word, driven by scroll position.</p>
-      <ul class="tags"><li>Typography</li><li>Scroll</li><li>Kinetic</li></ul>
+      <div class="specs" style="--fc:#181714">
+        <span><em>Form</em>Type</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/OnScrollTypographyAnimations/dist/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/OnScrollTypographyAnimations" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="fullscreen clip animation codrops clip reveal clip-path reveal fullscreen a full-screen image is revealed through a moving clip path, like a curtain cut.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="image" data-mechanism="transition" data-engine="dom" data-tempo="cinematic" data-search="fullscreen clip animation codrops clip reveal a full-screen image is revealed through a moving clip path, like a curtain cut. image transition dom cinematic 图像 转场 dom / css 电影感 clip-path reveal fullscreen">
     <a class="plate plate--photo plate--frame plate--frame-alt" href="source/codrops/FullscreenClipEffect/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Fullscreen Clip Animation">
     <img class="plate-img" src="source/codrops/FullscreenClipEffect/img/demo1/1.jpg" alt="Fullscreen Clip Animation — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">FC</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -641,16 +765,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Clip reveal</span></div>
+      <div class="card-meta"><span>028 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/FullscreenClipEffect/index.html" target="_blank" rel="noopener">Fullscreen Clip Animation</a></h3>
       <p>A full-screen image is revealed through a moving clip path, like a curtain cut.</p>
-      <ul class="tags"><li>Clip-path</li><li>Reveal</li><li>Fullscreen</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/FullscreenClipEffect/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/FullscreenClipEffect" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="gooey cursor effect codrops cursor cursor metaball svg a metaball cursor stretches, splits and merges around the pointer.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="interface" data-mechanism="hover" data-engine="canvas" data-tempo="playful" data-search="gooey cursor effect codrops cursor a metaball cursor stretches, splits and merges around the pointer. interface hover canvas playful 界面 悬停 canvas 游戏感 cursor metaball svg">
     <a class="plate plate--photo plate--type plate--type-stack" href="source/codrops/GooeyCursor/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Gooey Cursor Effect">
     <img class="plate-img" src="source/codrops/GooeyCursor/img/bg3.jpg" alt="Gooey Cursor Effect — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">GC</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -659,16 +787,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Cursor</span></div>
+      <div class="card-meta"><span>029 · 05 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/GooeyCursor/index.html" target="_blank" rel="noopener">Gooey Cursor Effect</a></h3>
       <p>A metaball cursor stretches, splits and merges around the pointer.</p>
-      <ul class="tags"><li>Cursor</li><li>Metaball</li><li>SVG</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>Canvas</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/GooeyCursor/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/GooeyCursor" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="grid flow animation codrops grid flow grid stagger wave a grid of tiles flows open in a wave, each cell offset by a fraction of a second.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="space" data-mechanism="scroll" data-engine="dom" data-tempo="playful" data-search="grid flow animation codrops grid flow a grid of tiles flows open in a wave, each cell offset by a fraction of a second. space scroll dom playful 空间 滚动 dom / css 游戏感 grid stagger wave">
     <a class="plate plate--gen plate--type" href="source/codrops/GridFlowEffect/index.html" target="_blank" rel="noopener" style="--p1:#22240f;--p2:#7f913d" aria-label="Open the local demo of Grid Flow Animation">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">GF</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -677,16 +809,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Grid flow</span></div>
+      <div class="card-meta"><span>030 · 05 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/GridFlowEffect/index.html" target="_blank" rel="noopener">Grid Flow Animation</a></h3>
       <p>A grid of tiles flows open in a wave, each cell offset by a fraction of a second.</p>
-      <ul class="tags"><li>Grid</li><li>Stagger</li><li>Wave</li></ul>
+      <div class="specs" style="--fc:#14867a">
+        <span><em>Form</em>Space</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/GridFlowEffect/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/GridFlowEffect" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="on-scroll animation ideas for sticky sections codrops sticky sections sticky scroll sections sections pin in place while their content scrolls past, then release.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="image" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="on-scroll animation ideas for sticky sections codrops sticky sections sections pin in place while their content scrolls past, then release. image scroll dom cinematic 图像 滚动 dom / css 电影感 sticky scroll sections">
     <a class="plate plate--photo plate--frame" href="source/codrops/StickySections/index.html" target="_blank" rel="noopener" style="--p1:#101c2b;--p2:#3f7fbf" aria-label="Open the local demo of On-Scroll Animation Ideas for Sticky Sections">
     <img class="plate-img" src="source/codrops/StickySections/img/1.png" alt="On-Scroll Animation Ideas for Sticky Sections — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">OS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -695,16 +831,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Sticky sections</span></div>
+      <div class="card-meta"><span>031 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/StickySections/index.html" target="_blank" rel="noopener">On-Scroll Animation Ideas for Sticky Sections</a></h3>
       <p>Sections pin in place while their content scrolls past, then release.</p>
-      <ul class="tags"><li>Sticky</li><li>Scroll</li><li>Sections</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/StickySections/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/StickySections" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="3d stack motion codrops 3d stack 3d stack scroll a stack of cards rotates in depth on scroll, each layer sliding out of alignment.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="space" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="3d stack motion codrops 3d stack a stack of cards rotates in depth on scroll, each layer sliding out of alignment. space scroll dom cinematic 空间 滚动 dom / css 电影感 3d stack scroll">
     <a class="plate plate--gen plate--type plate--type-wide" href="source/codrops/3DStackMotion/index.html" target="_blank" rel="noopener" style="--p1:#2a1020;--p2:#d14b6a" aria-label="Open the local demo of 3D Stack Motion">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">3S</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -713,16 +853,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>3D stack</span></div>
+      <div class="card-meta"><span>032 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/3DStackMotion/index.html" target="_blank" rel="noopener">3D Stack Motion</a></h3>
       <p>A stack of cards rotates in depth on scroll, each layer sliding out of alignment.</p>
-      <ul class="tags"><li>3D</li><li>Stack</li><li>Scroll</li></ul>
+      <div class="specs" style="--fc:#14867a">
+        <span><em>Form</em>Space</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/3DStackMotion/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/3DStackMotion" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="expanding image in type codrops typographic image typography image reveal an image grows out of a word and fills the line, then retreats.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="type" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="expanding image in type codrops typographic image an image grows out of a word and fills the line, then retreats. type scroll dom cinematic 字体 滚动 dom / css 电影感 typography image reveal">
     <a class="plate plate--photo plate--frame plate--frame-alt" href="source/codrops/ImageExpansionTypography/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of Expanding Image in Type">
     <img class="plate-img" src="source/codrops/ImageExpansionTypography/img/1.jpg" alt="Expanding Image in Type — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">EI</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -731,16 +875,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Typographic image</span></div>
+      <div class="card-meta"><span>033 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/ImageExpansionTypography/index.html" target="_blank" rel="noopener">Expanding Image in Type</a></h3>
       <p>An image grows out of a word and fills the line, then retreats.</p>
-      <ul class="tags"><li>Typography</li><li>Image</li><li>Reveal</li></ul>
+      <div class="specs" style="--fc:#181714">
+        <span><em>Form</em>Type</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/ImageExpansionTypography/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/ImageExpansionTypography" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="05-codrops-motion" data-search="on-scroll 3d carousel codrops carousel carousel 3d scroll a circular carousel that turns as you scroll, cards facing the centre.">
+  </article><article class="piece" data-volume="05-codrops-motion" data-form="image" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="on-scroll 3d carousel codrops carousel a circular carousel that turns as you scroll, cards facing the centre. image scroll dom cinematic 图像 滚动 dom / css 电影感 carousel 3d scroll">
     <a class="plate plate--photo plate--type plate--type-stack" href="source/codrops/3DCarousel/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of On-Scroll 3D Carousel">
     <img class="plate-img" src="source/codrops/3DCarousel/assets/img50.webp" alt="On-Scroll 3D Carousel — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">OS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -749,10 +897,14 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>05 · Codrops</span><span>Carousel</span></div>
+      <div class="card-meta"><span>034 · 05 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/3DCarousel/index.html" target="_blank" rel="noopener">On-Scroll 3D Carousel</a></h3>
       <p>A circular carousel that turns as you scroll, cards facing the centre.</p>
-      <ul class="tags"><li>Carousel</li><li>3D</li><li>Scroll</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/3DCarousel/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/3DCarousel" target="_blank" rel="noopener">Source <span>↳</span></a>
@@ -764,7 +916,7 @@
         <div class="vhead-l"><span class="vn">Volume 06</span><h2>Built worlds</h2><span class="vsub">Codrops · Worlds · 27 works</span></div>
         <a href="volumes/06-codrops-worlds.html">Open volume ↗</a>
       </div>
-      <div class="grid"><article class="piece" data-volume="06-codrops-worlds" data-search="direction-aware hover codrops hover hover css3 jquery the hover effect reads which edge the cursor enters, then sends the image that way.">
+      <div class="grid"><article class="piece" data-volume="06-codrops-worlds" data-form="interface" data-mechanism="hover" data-engine="dom" data-tempo="reactive" data-search="direction-aware hover codrops hover the hover effect reads which edge the cursor enters, then sends the image that way. interface hover dom reactive 界面 悬停 dom / css 响应 hover css3 jquery">
     <a class="plate plate--gen plate--frame" href="source/codrops/DirectionAwareHoverEffect/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of Direction-Aware Hover">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">DA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -773,16 +925,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Hover</span></div>
+      <div class="card-meta"><span>035 · 06 / Codrops</span><span>Reactive</span></div>
       <h3><a href="source/codrops/DirectionAwareHoverEffect/index.html" target="_blank" rel="noopener">Direction-Aware Hover</a></h3>
       <p>The hover effect reads which edge the cursor enters, then sends the image that way.</p>
-      <ul class="tags"><li>Hover</li><li>CSS3</li><li>jQuery</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/DirectionAwareHoverEffect/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/DirectionAwareHoverEffect" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="windy codrops navigation navigation 3d plugin a swift content-navigation plugin; panels rotate away like cards caught in a gust.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="interface" data-mechanism="navigate" data-engine="dom" data-tempo="playful" data-search="windy codrops navigation a swift content-navigation plugin; panels rotate away like cards caught in a gust. interface navigate dom playful 界面 导航 dom / css 游戏感 navigation 3d plugin">
     <a class="plate plate--gen plate--type plate--type-wide" href="source/codrops/Windy/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Windy">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">WI</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -791,16 +947,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Navigation</span></div>
+      <div class="card-meta"><span>036 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/Windy/index.html" target="_blank" rel="noopener">Windy</a></h3>
       <p>A Swift content-navigation plugin; panels rotate away like cards caught in a gust.</p>
-      <ul class="tags"><li>Navigation</li><li>3D</li><li>Plugin</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Navigate</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/Windy/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/Windy" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="baraja codrops card deck cards slider 3d a card-deck slider that spreads items across the table, then stacks them back.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="compose" data-engine="dom" data-tempo="playful" data-search="baraja codrops card deck a card-deck slider that spreads items across the table, then stacks them back. image compose dom playful 图像 编排 dom / css 游戏感 cards slider 3d">
     <a class="plate plate--gen plate--frame plate--frame-thirds" href="source/codrops/Baraja/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Baraja">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">BA</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -809,16 +969,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Card deck</span></div>
+      <div class="card-meta"><span>037 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/Baraja/index.html" target="_blank" rel="noopener">Baraja</a></h3>
       <p>A card-deck slider that spreads items across the table, then stacks them back.</p>
-      <ul class="tags"><li>Cards</li><li>Slider</li><li>3D</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Compose</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/Baraja/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/Baraja" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="stackslider codrops stack slider 3d drag a 3d image stack you drag through; each slide peels off the pile.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="compose" data-engine="dom" data-tempo="playful" data-search="stackslider codrops stack a 3d image stack you drag through; each slide peels off the pile. image compose dom playful 图像 编排 dom / css 游戏感 slider 3d drag">
     <a class="plate plate--gen plate--type plate--type-stack" href="source/codrops/StackSlider/index.html" target="_blank" rel="noopener" style="--p1:#22240f;--p2:#7f913d" aria-label="Open the local demo of StackSlider">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">ST</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -827,16 +991,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Stack</span></div>
+      <div class="card-meta"><span>038 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/StackSlider/index.html" target="_blank" rel="noopener">StackSlider</a></h3>
       <p>A 3D image stack you drag through; each slide peels off the pile.</p>
-      <ul class="tags"><li>Slider</li><li>3D</li><li>Drag</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Compose</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/StackSlider/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/StackSlider" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="expanding thumbnail grid codrops grid preview grid preview layout click a thumbnail and the grid opens a preview in place, without leaving the page.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="compose" data-engine="dom" data-tempo="reactive" data-search="expanding thumbnail grid codrops grid preview click a thumbnail and the grid opens a preview in place, without leaving the page. image compose dom reactive 图像 编排 dom / css 响应 grid preview layout">
     <a class="plate plate--gen plate--frame plate--frame-diagonal" href="source/codrops/ThumbnailGridExpandingPreview/index.html" target="_blank" rel="noopener" style="--p1:#101c2b;--p2:#3f7fbf" aria-label="Open the local demo of Expanding Thumbnail Grid">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">ET</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -845,16 +1013,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Grid preview</span></div>
+      <div class="card-meta"><span>039 · 06 / Codrops</span><span>Reactive</span></div>
       <h3><a href="source/codrops/ThumbnailGridExpandingPreview/index.html" target="_blank" rel="noopener">Expanding Thumbnail Grid</a></h3>
       <p>Click a thumbnail and the grid opens a preview in place, without leaving the page.</p>
-      <ul class="tags"><li>Grid</li><li>Preview</li><li>Layout</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Compose</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/ThumbnailGridExpandingPreview/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/ThumbnailGridExpandingPreview" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="page transitions codrops transition set transitions css collection seven ways to leave a page: wipes, folds, pushes and reveals.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="transition" data-engine="dom" data-tempo="cinematic" data-search="page transitions codrops transition set seven ways to leave a page: wipes, folds, pushes and reveals. image transition dom cinematic 图像 转场 dom / css 电影感 transitions css collection">
     <a class="plate plate--gen plate--type" href="source/codrops/PageTransitions/index.html" target="_blank" rel="noopener" style="--p1:#2a1020;--p2:#d14b6a" aria-label="Open the local demo of Page Transitions">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">PT</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -863,16 +1035,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Transition set</span></div>
+      <div class="card-meta"><span>040 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/PageTransitions/index.html" target="_blank" rel="noopener">Page Transitions</a></h3>
       <p>Seven ways to leave a page: wipes, folds, pushes and reveals.</p>
-      <ul class="tags"><li>Transitions</li><li>CSS</li><li>Collection</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/PageTransitions/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/PageTransitions" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="dynamic grid with transitions codrops dynamic grid grid reflow transition a grid that reflows around a selected item, animating every neighbour out of the way.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="space" data-mechanism="compose" data-engine="dom" data-tempo="playful" data-search="dynamic grid with transitions codrops dynamic grid a grid that reflows around a selected item, animating every neighbour out of the way. space compose dom playful 空间 编排 dom / css 游戏感 grid reflow transition">
     <a class="plate plate--gen plate--frame plate--frame-alt" href="source/codrops/DynamicGrid/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of Dynamic Grid with Transitions">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">DG</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -881,16 +1057,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Dynamic grid</span></div>
+      <div class="card-meta"><span>041 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/DynamicGrid/index.html" target="_blank" rel="noopener">Dynamic Grid with Transitions</a></h3>
       <p>A grid that reflows around a selected item, animating every neighbour out of the way.</p>
-      <ul class="tags"><li>Grid</li><li>Reflow</li><li>Transition</li></ul>
+      <div class="specs" style="--fc:#14867a">
+        <span><em>Form</em>Space</span>
+        <span><em>Mechanism</em>Compose</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/DynamicGrid/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/DynamicGrid" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="nifty modals codrops modal set modal effects css modals that arrive by scale, slide, blur and fold rather than a plain fade.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="interface" data-mechanism="transition" data-engine="dom" data-tempo="playful" data-search="nifty modals codrops modal set modals that arrive by scale, slide, blur and fold rather than a plain fade. interface transition dom playful 界面 转场 dom / css 游戏感 modal effects css">
     <a class="plate plate--gen plate--frame" href="source/codrops/ModalWindowEffects/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of Nifty Modals">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">NM</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -899,16 +1079,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Modal set</span></div>
+      <div class="card-meta"><span>042 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/ModalWindowEffects/index.html" target="_blank" rel="noopener">Nifty Modals</a></h3>
       <p>Modals that arrive by scale, slide, blur and fold rather than a plain fade.</p>
-      <ul class="tags"><li>Modal</li><li>Effects</li><li>CSS</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/ModalWindowEffects/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/ModalWindowEffects" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="animated svg icons codrops svg icons svg icons snap.svg line icons draw themselves on hover, stroke by stroke.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="interface" data-mechanism="hover" data-engine="svg" data-tempo="playful" data-search="animated svg icons codrops svg icons line icons draw themselves on hover, stroke by stroke. interface hover svg playful 界面 悬停 svg 游戏感 svg icons snap.svg">
     <a class="plate plate--gen plate--type plate--type-wide" href="source/codrops/AnimatedSVGIcons/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of Animated SVG Icons">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">AS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -917,16 +1101,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>SVG icons</span></div>
+      <div class="card-meta"><span>043 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/AnimatedSVGIcons/index.html" target="_blank" rel="noopener">Animated SVG Icons</a></h3>
       <p>Line icons draw themselves on hover, stroke by stroke.</p>
-      <ul class="tags"><li>SVG</li><li>Icons</li><li>Snap.svg</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>SVG</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/AnimatedSVGIcons/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/AnimatedSVGIcons" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="elastic stack codrops elastic stack drag elastic stack drag a stack of cards past its threshold and it snaps to the next one with elastic weight.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="interface" data-mechanism="navigate" data-engine="dom" data-tempo="playful" data-search="elastic stack codrops elastic stack drag a stack of cards past its threshold and it snaps to the next one with elastic weight. interface navigate dom playful 界面 导航 dom / css 游戏感 drag elastic stack">
     <a class="plate plate--gen plate--frame plate--frame-thirds" href="source/codrops/ElastiStack/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Elastic Stack">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">ES</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -935,16 +1123,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Elastic stack</span></div>
+      <div class="card-meta"><span>044 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/ElastiStack/index.html" target="_blank" rel="noopener">Elastic Stack</a></h3>
       <p>Drag a stack of cards past its threshold and it snaps to the next one with elastic weight.</p>
-      <ul class="tags"><li>Drag</li><li>Elastic</li><li>Stack</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Navigate</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/ElastiStack/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/ElastiStack" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="perspective navigation codrops perspective nav navigation perspective 3d a menu that pushes the page back in 3d space, then slides a panel over it.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="interface" data-mechanism="navigate" data-engine="dom" data-tempo="cinematic" data-search="perspective navigation codrops perspective nav a menu that pushes the page back in 3d space, then slides a panel over it. interface navigate dom cinematic 界面 导航 dom / css 电影感 navigation perspective 3d">
     <a class="plate plate--gen plate--type plate--type-stack" href="source/codrops/PerspectivePageViewNavigation/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Perspective Navigation">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">PN</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -953,16 +1145,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Perspective nav</span></div>
+      <div class="card-meta"><span>045 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/PerspectivePageViewNavigation/index.html" target="_blank" rel="noopener">Perspective Navigation</a></h3>
       <p>A menu that pushes the page back in 3D space, then slides a panel over it.</p>
-      <ul class="tags"><li>Navigation</li><li>Perspective</li><li>3D</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Navigate</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/PerspectivePageViewNavigation/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/PerspectivePageViewNavigation" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="“look inside” book preview with bookblock codrops book preview book page turn preview a &#39;look inside&#39; book: pages turn with a soft shadow, revealing the spread beneath.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="transition" data-engine="dom" data-tempo="cinematic" data-search="“look inside” book preview with bookblock codrops book preview a &#39;look inside&#39; book: pages turn with a soft shadow, revealing the spread beneath. image transition dom cinematic 图像 转场 dom / css 电影感 book page turn preview">
     <a class="plate plate--gen plate--frame plate--frame-diagonal" href="source/codrops/BookPreview/index.html" target="_blank" rel="noopener" style="--p1:#22240f;--p2:#7f913d" aria-label="Open the local demo of “Look Inside” Book Preview with BookBlock">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">LI</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -971,16 +1167,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Book preview</span></div>
+      <div class="card-meta"><span>046 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/BookPreview/index.html" target="_blank" rel="noopener">“Look Inside” Book Preview with BookBlock</a></h3>
       <p>A &#39;look inside&#39; book: pages turn with a soft shadow, revealing the spread beneath.</p>
-      <ul class="tags"><li>Book</li><li>Page turn</li><li>Preview</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/BookPreview/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/BookPreview" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="scattered polaroids gallery codrops polaroid gallery gallery physics polaroid polaroids fall into a loose pile, then snap into a neat strip when you click.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="compose" data-engine="dom" data-tempo="playful" data-search="scattered polaroids gallery codrops polaroid gallery polaroids fall into a loose pile, then snap into a neat strip when you click. image compose dom playful 图像 编排 dom / css 游戏感 gallery physics polaroid">
     <a class="plate plate--photo plate--type" href="source/codrops/ScatteredPolaroidsGallery/index.html" target="_blank" rel="noopener" style="--p1:#101c2b;--p2:#3f7fbf" aria-label="Open the local demo of Scattered Polaroids Gallery">
     <img class="plate-img" src="source/codrops/ScatteredPolaroidsGallery/img/11.jpg" alt="Scattered Polaroids Gallery — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">SP</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -989,16 +1189,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Polaroid gallery</span></div>
+      <div class="card-meta"><span>047 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/ScatteredPolaroidsGallery/index.html" target="_blank" rel="noopener">Scattered Polaroids Gallery</a></h3>
       <p>Polaroids fall into a loose pile, then snap into a neat strip when you click.</p>
-      <ul class="tags"><li>Gallery</li><li>Physics</li><li>Polaroid</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Compose</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/ScatteredPolaroidsGallery/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/ScatteredPolaroidsGallery" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="grid gallery codrops grid gallery grid gallery layout a mosaic grid with labels and a full-screen viewer; the original google-style gallery.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="compose" data-engine="dom" data-tempo="cinematic" data-search="grid gallery codrops grid gallery a mosaic grid with labels and a full-screen viewer; the original google-style gallery. image compose dom cinematic 图像 编排 dom / css 电影感 grid gallery layout">
     <a class="plate plate--gen plate--frame plate--frame-alt" href="source/codrops/GridGallery/index.html" target="_blank" rel="noopener" style="--p1:#2a1020;--p2:#d14b6a" aria-label="Open the local demo of Grid Gallery">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">GG</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1007,16 +1211,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Grid gallery</span></div>
+      <div class="card-meta"><span>048 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/GridGallery/index.html" target="_blank" rel="noopener">Grid Gallery</a></h3>
       <p>A mosaic grid with labels and a full-screen viewer; the original Google-style gallery.</p>
-      <ul class="tags"><li>Grid</li><li>Gallery</li><li>Layout</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Compose</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/GridGallery/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/GridGallery" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="menu to grid layout animation codrops menu morph menu morph grid a full-screen menu decomposes into a grid of thumbnails, then reassembles.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="interface" data-mechanism="navigate" data-engine="dom" data-tempo="playful" data-search="menu to grid layout animation codrops menu morph a full-screen menu decomposes into a grid of thumbnails, then reassembles. interface navigate dom playful 界面 导航 dom / css 游戏感 menu morph grid">
     <a class="plate plate--photo plate--frame" href="source/codrops/MenuToGrid/dist/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of Menu to Grid Layout Animation">
     <img class="plate-img" src="source/codrops/MenuToGrid/src/img/31.jpg" alt="Menu to Grid Layout Animation — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">MT</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1025,16 +1233,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Menu morph</span></div>
+      <div class="card-meta"><span>049 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/MenuToGrid/dist/index.html" target="_blank" rel="noopener">Menu to Grid Layout Animation</a></h3>
       <p>A full-screen menu decomposes into a grid of thumbnails, then reassembles.</p>
-      <ul class="tags"><li>Menu</li><li>Morph</li><li>Grid</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Navigate</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/MenuToGrid/dist/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/MenuToGrid" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="on-scroll svg filter effect codrops svg filter svg filter scroll distortion an svg turbulence filter distorts the image as it passes through the viewport.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="scroll" data-engine="svg" data-tempo="cinematic" data-search="on-scroll svg filter effect codrops svg filter an svg turbulence filter distorts the image as it passes through the viewport. image scroll svg cinematic 图像 滚动 svg 电影感 svg filter scroll distortion">
     <a class="plate plate--photo plate--type plate--type-wide" href="source/codrops/OnScrollFilter/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of On-Scroll SVG Filter Effect">
     <img class="plate-img" src="source/codrops/OnScrollFilter/img/1.jpg" alt="On-Scroll SVG Filter Effect — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">OS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1043,16 +1255,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>SVG filter</span></div>
+      <div class="card-meta"><span>050 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/OnScrollFilter/index.html" target="_blank" rel="noopener">On-Scroll SVG Filter Effect</a></h3>
       <p>An SVG turbulence filter distorts the image as it passes through the viewport.</p>
-      <ul class="tags"><li>SVG filter</li><li>Scroll</li><li>Distortion</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>SVG</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/OnScrollFilter/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/OnScrollFilter" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="perspective grid codrops perspective grid perspective scroll 3d a 3d grid accelerates toward the viewer as you scroll, lines converging to a vanishing point.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="space" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="perspective grid codrops perspective grid a 3d grid accelerates toward the viewer as you scroll, lines converging to a vanishing point. space scroll dom cinematic 空间 滚动 dom / css 电影感 perspective scroll 3d">
     <a class="plate plate--gen plate--frame plate--frame-thirds" href="source/codrops/Scroll3DGrid/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of Perspective Grid">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">PG</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1061,16 +1277,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Perspective grid</span></div>
+      <div class="card-meta"><span>051 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/Scroll3DGrid/index.html" target="_blank" rel="noopener">Perspective Grid</a></h3>
       <p>A 3D grid accelerates toward the viewer as you scroll, lines converging to a vanishing point.</p>
-      <ul class="tags"><li>Perspective</li><li>Scroll</li><li>3D</li></ul>
+      <div class="specs" style="--fc:#14867a">
+        <span><em>Form</em>Space</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/Scroll3DGrid/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/Scroll3DGrid" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="fullscreen slideshow ideas codrops slideshow slideshow fullscreen transition full-screen images change through wipes, scales and layered reveals.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="transition" data-engine="dom" data-tempo="cinematic" data-search="fullscreen slideshow ideas codrops slideshow full-screen images change through wipes, scales and layered reveals. image transition dom cinematic 图像 转场 dom / css 电影感 slideshow fullscreen transition">
     <a class="plate plate--photo plate--type plate--type-stack" href="source/codrops/SlideshowAnimations/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Fullscreen Slideshow Ideas">
     <img class="plate-img" src="source/codrops/SlideshowAnimations/img/1.jpg" alt="Fullscreen Slideshow Ideas — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">FS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1079,16 +1299,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Slideshow</span></div>
+      <div class="card-meta"><span>052 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/SlideshowAnimations/index.html" target="_blank" rel="noopener">Fullscreen Slideshow Ideas</a></h3>
       <p>Full-screen images change through wipes, scales and layered reveals.</p>
-      <ul class="tags"><li>Slideshow</li><li>Fullscreen</li><li>Transition</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/SlideshowAnimations/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/SlideshowAnimations" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="image motion trails codrops motion trails trails motion images images leave trails of themselves as they move, like long-exposure photography.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="hover" data-engine="canvas" data-tempo="playful" data-search="image motion trails codrops motion trails images leave trails of themselves as they move, like long-exposure photography. image hover canvas playful 图像 悬停 canvas 游戏感 trails motion images">
     <a class="plate plate--gen plate--frame plate--frame-diagonal" href="source/codrops/MotionTrailAnimations/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Image Motion Trails">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">IM</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1097,16 +1321,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Motion trails</span></div>
+      <div class="card-meta"><span>053 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/MotionTrailAnimations/index.html" target="_blank" rel="noopener">Image Motion Trails</a></h3>
       <p>Images leave trails of themselves as they move, like long-exposure photography.</p>
-      <ul class="tags"><li>Trails</li><li>Motion</li><li>Images</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>Canvas</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/MotionTrailAnimations/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/MotionTrailAnimations" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="staggered 3d grids codrops 3d grid 3d grid stagger a grid of planes tilts and cascades in 3d, with each row delayed.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="space" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="staggered 3d grids codrops 3d grid a grid of planes tilts and cascades in 3d, with each row delayed. space scroll dom cinematic 空间 滚动 dom / css 电影感 3d grid stagger">
     <a class="plate plate--photo plate--type" href="source/codrops/Staggered3DGridAnimations/index.html" target="_blank" rel="noopener" style="--p1:#22240f;--p2:#7f913d" aria-label="Open the local demo of Staggered 3D Grids">
     <img class="plate-img" src="source/codrops/Staggered3DGridAnimations/img/1.jpg" alt="Staggered 3D Grids — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">S3</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1115,16 +1343,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>3D grid</span></div>
+      <div class="card-meta"><span>054 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/Staggered3DGridAnimations/index.html" target="_blank" rel="noopener">Staggered 3D Grids</a></h3>
       <p>A grid of planes tilts and cascades in 3D, with each row delayed.</p>
-      <ul class="tags"><li>3D</li><li>Grid</li><li>Stagger</li></ul>
+      <div class="specs" style="--fc:#14867a">
+        <span><em>Form</em>Space</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/Staggered3DGridAnimations/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/Staggered3DGridAnimations" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="elastic grid scroll codrops elastic grid elastic grid scroll the grid stretches against the scroll and springs back when you stop.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="space" data-mechanism="scroll" data-engine="dom" data-tempo="playful" data-search="elastic grid scroll codrops elastic grid the grid stretches against the scroll and springs back when you stop. space scroll dom playful 空间 滚动 dom / css 游戏感 elastic grid scroll">
     <a class="plate plate--photo plate--frame plate--frame-alt" href="source/codrops/ElasticGridScroll/index.html" target="_blank" rel="noopener" style="--p1:#101c2b;--p2:#3f7fbf" aria-label="Open the local demo of Elastic Grid Scroll">
     <img class="plate-img" src="source/codrops/ElasticGridScroll/assets/28.webp" alt="Elastic Grid Scroll — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">EG</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1133,16 +1365,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Elastic grid</span></div>
+      <div class="card-meta"><span>055 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/ElasticGridScroll/index.html" target="_blank" rel="noopener">Elastic Grid Scroll</a></h3>
       <p>The grid stretches against the scroll and springs back when you stop.</p>
-      <ul class="tags"><li>Elastic</li><li>Grid</li><li>Scroll</li></ul>
+      <div class="specs" style="--fc:#14867a">
+        <span><em>Form</em>Space</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/ElasticGridScroll/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/ElasticGridScroll" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="balloon button codrops 3d button 3d button hover a button that inflates into a glossy 3d balloon under the cursor.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="interface" data-mechanism="hover" data-engine="canvas" data-tempo="playful" data-search="balloon button codrops 3d button a button that inflates into a glossy 3d balloon under the cursor. interface hover canvas playful 界面 悬停 canvas 游戏感 3d button hover">
     <a class="plate plate--gen plate--frame" href="source/codrops/BalloonButton/index.html" target="_blank" rel="noopener" style="--p1:#2a1020;--p2:#d14b6a" aria-label="Open the local demo of Balloon Button">
     
     <span class="gen" aria-hidden="true"><i class="gen-glyph">BB</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1151,16 +1387,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>3D button</span></div>
+      <div class="card-meta"><span>056 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/BalloonButton/index.html" target="_blank" rel="noopener">Balloon Button</a></h3>
       <p>A button that inflates into a glossy 3D balloon under the cursor.</p>
-      <ul class="tags"><li>3D</li><li>Button</li><li>Hover</li></ul>
+      <div class="specs" style="--fc:#6657ff">
+        <span><em>Form</em>Interface</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>Canvas</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/BalloonButton/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/BalloonButton" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="3d image rotations on scroll codrops rotation rotation scroll 3d images rotate through 3d space as they enter and leave the viewport.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="scroll" data-engine="dom" data-tempo="cinematic" data-search="3d image rotations on scroll codrops rotation images rotate through 3d space as they enter and leave the viewport. image scroll dom cinematic 图像 滚动 dom / css 电影感 rotation scroll 3d">
     <a class="plate plate--photo plate--type plate--type-wide" href="source/codrops/RotatingOnScrollAnimations/index.html" target="_blank" rel="noopener" style="--p1:#142a4a;--p2:#2b36ff" aria-label="Open the local demo of 3D Image Rotations on Scroll">
     <img class="plate-img" src="source/codrops/RotatingOnScrollAnimations/assets/02.webp" alt="3D Image Rotations on Scroll — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">3I</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1169,16 +1409,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Rotation</span></div>
+      <div class="card-meta"><span>057 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/RotatingOnScrollAnimations/index.html" target="_blank" rel="noopener">3D Image Rotations on Scroll</a></h3>
       <p>Images rotate through 3D space as they enter and leave the viewport.</p>
-      <ul class="tags"><li>Rotation</li><li>Scroll</li><li>3D</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Scroll</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/RotatingOnScrollAnimations/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/RotatingOnScrollAnimations" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="cinema seat preview codrops cinema cinema 3d interaction pick a seat in a 3d cinema and see the screen from that angle.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="hover" data-engine="dom" data-tempo="cinematic" data-search="cinema seat preview codrops cinema pick a seat in a 3d cinema and see the screen from that angle. image hover dom cinematic 图像 悬停 dom / css 电影感 cinema 3d interaction">
     <a class="plate plate--photo plate--frame plate--frame-thirds" href="source/codrops/CinemaSeatPreview/index.html" target="_blank" rel="noopener" style="--p1:#2a1724;--p2:#c2412d" aria-label="Open the local demo of Cinema Seat Preview">
     <img class="plate-img" src="source/codrops/CinemaSeatPreview/assets/charge-poster.jpg" alt="Cinema Seat Preview — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">CS</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1187,16 +1431,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Cinema</span></div>
+      <div class="card-meta"><span>058 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/CinemaSeatPreview/index.html" target="_blank" rel="noopener">Cinema Seat Preview</a></h3>
       <p>Pick a seat in a 3D cinema and see the screen from that angle.</p>
-      <ul class="tags"><li>Cinema</li><li>3D</li><li>Interaction</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/CinemaSeatPreview/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/CinemaSeatPreview" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="seam transitions codrops seam seam transition pages pages join along a seam that opens, folds and closes into the next view.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="transition" data-engine="dom" data-tempo="cinematic" data-search="seam transitions codrops seam pages join along a seam that opens, folds and closes into the next view. image transition dom cinematic 图像 转场 dom / css 电影感 seam transition pages">
     <a class="plate plate--photo plate--type plate--type-stack" href="source/codrops/SeamTransitions/index.html" target="_blank" rel="noopener" style="--p1:#102c2b;--p2:#14867a" aria-label="Open the local demo of Seam Transitions">
     <img class="plate-img" src="source/codrops/SeamTransitions/og-image.jpg" alt="Seam Transitions — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">ST</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1205,16 +1453,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Seam</span></div>
+      <div class="card-meta"><span>059 · 06 / Codrops</span><span>Cinematic</span></div>
       <h3><a href="source/codrops/SeamTransitions/index.html" target="_blank" rel="noopener">Seam Transitions</a></h3>
       <p>Pages join along a seam that opens, folds and closes into the next view.</p>
-      <ul class="tags"><li>Seam</li><li>Transition</li><li>Pages</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Transition</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/SeamTransitions/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/SeamTransitions" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="lookbook hover effects codrops lookbook lookbook hover fashion fashion lookbook hovers: images slide, crop and reveal alternate angles.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="hover" data-engine="dom" data-tempo="playful" data-search="lookbook hover effects codrops lookbook fashion lookbook hovers: images slide, crop and reveal alternate angles. image hover dom playful 图像 悬停 dom / css 游戏感 lookbook hover fashion">
     <a class="plate plate--photo plate--frame plate--frame-diagonal" href="source/codrops/LookbookHoverEffects/index.html" target="_blank" rel="noopener" style="--p1:#211a38;--p2:#6657ff" aria-label="Open the local demo of Lookbook Hover Effects">
     <img class="plate-img" src="source/codrops/LookbookHoverEffects/og-image.jpg" alt="Lookbook Hover Effects — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">LH</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1223,16 +1475,20 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Lookbook</span></div>
+      <div class="card-meta"><span>060 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/LookbookHoverEffects/index.html" target="_blank" rel="noopener">Lookbook Hover Effects</a></h3>
       <p>Fashion lookbook hovers: images slide, crop and reveal alternate angles.</p>
-      <ul class="tags"><li>Lookbook</li><li>Hover</li><li>Fashion</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/LookbookHoverEffects/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/LookbookHoverEffects" target="_blank" rel="noopener">Source <span>↳</span></a>
       </div>
     </div>
-  </article><article class="piece" data-volume="06-codrops-worlds" data-search="inline hover reveals codrops inline reveal inline hover images inline images bloom out of body text as the cursor passes over links.">
+  </article><article class="piece" data-volume="06-codrops-worlds" data-form="image" data-mechanism="hover" data-engine="dom" data-tempo="playful" data-search="inline hover reveals codrops inline reveal inline images bloom out of body text as the cursor passes over links. image hover dom playful 图像 悬停 dom / css 游戏感 inline hover images">
     <a class="plate plate--photo plate--type" href="source/codrops/InlineHoverReveals/index.html" target="_blank" rel="noopener" style="--p1:#2d1d14;--p2:#b7672f" aria-label="Open the local demo of Inline Hover Reveals">
     <img class="plate-img" src="source/codrops/InlineHoverReveals/og-image.jpg" alt="Inline Hover Reveals — preview from the source repository" loading="lazy" decoding="async">
     <span class="gen" aria-hidden="true"><i class="gen-glyph">IH</i><i class="gen-ring"></i><i class="gen-bar"></i></span>
@@ -1241,10 +1497,14 @@
     <span class="plate-open">Open demo <b>↗</b></span>
   </a>
     <div class="copy">
-      <div class="card-meta"><span>06 · Codrops</span><span>Inline reveal</span></div>
+      <div class="card-meta"><span>061 · 06 / Codrops</span><span>Playful</span></div>
       <h3><a href="source/codrops/InlineHoverReveals/index.html" target="_blank" rel="noopener">Inline Hover Reveals</a></h3>
       <p>Inline images bloom out of body text as the cursor passes over links.</p>
-      <ul class="tags"><li>Inline</li><li>Hover</li><li>Images</li></ul>
+      <div class="specs" style="--fc:#b23a48">
+        <span><em>Form</em>Image</span>
+        <span><em>Mechanism</em>Hover</span>
+        <span><em>Engine</em>DOM</span>
+      </div>
       <div class="card-links">
         <a class="go" href="source/codrops/InlineHoverReveals/index.html" target="_blank" rel="noopener">Open demo <span>↗</span></a>
         <a class="src" href="https://github.com/bear20252026/frontier-studio/tree/main/source/codrops/InlineHoverReveals" target="_blank" rel="noopener">Source <span>↳</span></a>
@@ -1252,7 +1512,7 @@
     </div>
   </article></div>
     </section>
-    <p class="empty" id="empty">Nothing in this volume matches that word. Try “fluid”, “grid”, “WebGPU” or clear the search.</p>
+    <p class="empty" id="empty">Nothing matches that combination. Try another cell, clear a facet, or reset the wall.</p>
   </section>
   </main>
   <footer class="foot">
@@ -1264,6 +1524,7 @@
       <p class="fine">61 works from Saharan, David Li, Amanda Ghassaei, Jeantimex and Codrops. Complete source snapshots live in this repository under <code>source/</code>. Everything remains © the original authors; Codrops demos are published under their respective terms. No commercial reuse is implied. <a href="notes.html">Read the notes</a>.</p>
       <div class="foot-links">
         <a href="index.html">All volumes</a>
+        <a href="taxonomy.html">Classified index</a>
         <a href="sources.html">53 repositories</a>
         <a href="https://bear20252026.github.io/frontier-atlas/" target="_blank" rel="noopener">Frontier Atlas ↗</a>
       </div>
