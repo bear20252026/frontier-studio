@@ -44,9 +44,9 @@ A static server is required because several WebGL/WebGPU demos load shaders, WAS
 
 ## Demo caveats
 
-- WebGPU demos (`WebGPU Water`, `Lenticular Lens`, `Raindrop`) need a WebGPU-capable browser and GPU.
-- `Saharan Water` may stay black under software rendering (SwiftShader); the source is present and works on hardware WebGL.
+- WebGPU demos (`Saharan Water`, `WebGPU Water`, `Lenticular Lens`, `Raindrop`) need a WebGPU-capable browser and GPU; under software rendering they may stay black.
 - `Jeantimex` repositories are Vite projects; their `dist/` builds are included and used by the cards. The untouched source remains alongside them.
+- Some Codrops pieces begin on an interaction: `Menu to Grid` opens with a cursor dot, and hover-led pieces need a pointer to reveal their state.
 - Codrops pieces sometimes pull fonts or analytics from their original CDNs; the interaction code itself is local.
 
 ## Rights
