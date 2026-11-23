@@ -1,0 +1,362 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/* https://vegaprotocol.github.io/alpha-lyrae/ */
+
+@font-face {
+	font-family: 'AlphaLyrae';
+	src: url('../fonts/AlphaLyrae-Medium.woff2') format('woff2'),
+	url('../fonts/AlphaLyrae-Medium.woff') format('woff');
+	font-style: normal;
+}
+
+:root {
+	font-size: 13px;
+	--color-text: #fff;
+	--color-bg: #000;
+	--color-link: #fff;
+	--color-link-hover: #fff;
+	--img-width: 190px;
+	--img-ratio: 1.1;
+	--img-offset-x: 20px;
+	--img-offset-y: 20px;
+	--img-border-radius: 7px;
+}
+
+body {
+	margin: 0;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: 'AlphaLyrae', sans-serif;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	min-height: 100svh;
+}
+
+.demo-3 {
+	--img-width: 160px;
+	--img-ratio: 0.7;
+}
+
+.demo-4 {
+	--img-ratio: 1;
+}
+
+.demo-5 {
+	--img-width: 230px;
+	--img-ratio: 1.2;
+}
+
+.demo-6 {
+	--color-bg: #000;
+	--img-ratio: 0.85;
+	--img-border-radius: 0px;
+}
+
+.demo-7 {
+	--img-ratio: 1;
+	--img-border-radius: 4px;
+}
+
+.demo-8 {
+	--img-width: 175px;
+	--img-ratio: 1;
+	--img-border-radius: 4px;
+}
+
+.demo-9 {
+	--img-width: 260px;
+	--img-ratio: 1;
+}
+
+.demo-10 {
+	--img-width: 150px;
+	--img-ratio: 0.8;
+	/* The picture is cut into slices that move on their own, so it fills its box exactly and may leave it */
+	--img-offset-x: 0px;
+	--img-offset-y: 0px;
+}
+
+.demo-11 {
+	--img-width: 150px;
+	--img-ratio: 0.8;
+}
+
+.demo-12 {
+	--img-width: 150px;
+	--img-ratio: 0.8;
+}
+
+.demo-13 {
+	--img-width: 150px;
+	--img-ratio: 0.8;
+}
+
+.demo-14 {
+	--img-width: 240px;
+	--img-ratio: 1.4;
+}
+
+.demo-15 {
+	--img-width: 140px;
+	--img-ratio: 0.8;
+	--img-border-radius: 14px;
+}
+
+.demo-16 {
+	--img-width: 150px;
+	--img-ratio: 0.8;
+}
+
+/* Page Loader */
+.js body::before,
+.js body::after {
+	content: '';
+	position: fixed;
+	z-index: 2000;
+	/* Fades out once the page has loaded */
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.js body::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js body::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	/* The pulse animates the color's transparency, which leaves opacity free for the fade out */
+	background: color-mix(in srgb, var(--color-link) 40%, transparent);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+.js body:not(.loading)::before,
+.js body:not(.loading)::after {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.js body:not(.loading)::after {
+	animation-play-state: paused;
+}
+
+@keyframes loaderAnim {
+	to {
+		background: var(--color-link);
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus-visible {
+	/* Draw a very noticeable focus style for keyboard-focus */
+	outline: 2px solid red;
+}
+
+main {
+	padding: 1.25rem;
+	display: grid;
+	height: 100svh;
+	width: 100%;
+	grid-row-gap: 1.25rem;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto auto;
+	grid-template-areas: 'frame' 'content' 'meta' 'demos';
+	/* Images flying past the screen's edges are cut off there, instead of widening the page */
+	overflow: clip;
+}
+
+.meta {
+	grid-area: meta;
+}
+
+.meta__title {
+	margin: 0;
+	font-size: clamp(1rem,2.5vw,2.5rem);
+	font-weight: 300;
+}
+
+.meta__subtitle {
+	margin: 0;
+}
+
+.frame__demos {
+	position: relative;
+	grid-area: demos;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	align-content: flex-end;
+	gap: 0.5rem 1rem;
+	z-index: 200;
+}
+
+.frame__demos-label {
+	margin-right: 0.5rem;
+}
+
+.frame__demo {
+	font-variant-numeric: tabular-nums;
+	/* A bigger area to tap or click than the number itself, without moving anything */
+	padding: 0.5rem 0.25rem;
+	margin: -0.5rem -0.25rem;
+}
+
+.frame__demo--current {
+	color: rgba(255,255,255,0.5);
+}
+
+.frame {
+	grid-area: frame;
+	z-index: 1000;
+	position: relative;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-areas: 'title title' 'links tags' 'sponsor sponsor';
+	grid-gap: 0.5rem;
+}
+
+body #cdawrap {
+	grid-area: sponsor;
+	justify-self: start;
+}
+
+.frame a {
+	pointer-events: auto;
+}
+
+.frame__title {
+	grid-area: title;
+	font-size: inherit;
+	margin: 0;
+	font-weight: inherit;
+}
+
+.frame__links,
+.frame__tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 2rem;
+}
+
+.frame__links {
+	grid-area: links;
+}
+
+.frame__tags {
+	grid-area: tags;
+}
+
+.content {
+	grid-area: content;
+	position: relative;
+	z-index: 100;
+	/* The finger draws the trail here, so touch doesn't scroll, zoom or refresh the page */
+	touch-action: none;
+}
+
+.content__img {
+	width: var(--img-width);
+	aspect-ratio: var(--img-ratio);
+	border-radius: var(--img-border-radius);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	overflow: hidden;
+	will-change: transform, filter;
+}
+
+.demo-7 .content__img {
+	mix-blend-mode: screen;
+}
+
+.demo-8 .content__img,
+.demo-10 .content__img {
+	overflow: visible;
+}
+
+/* Demo 10's slices are copies of the whole picture, each with the image's rounded corners, cut down to their strip */
+.demo-10 .content__img-inner {
+	border-radius: var(--img-border-radius);
+}
+
+.content__img-inner {
+	background-position: 50% 50%;
+	width: calc(100% + var(--img-offset-x));
+	height: calc(100% + var(--img-offset-y));
+	background-size: cover;
+	position: absolute;
+	top: calc( -1 * var(--img-offset-y) / 2 );
+	left: calc( -1 * var(--img-offset-x) / 2 );
+}
+
+/* The WebGL variations draw on a canvas over the whole viewport. It sits inside the content element,
+   so like the DOM images it's above the title and below the frame and the nav. */
+.content__canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+@media screen and (min-width: 53em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 'frame frame' 'content content' 'meta demos';
+	}
+	.frame {
+		grid-template-columns: auto auto auto 1fr;
+		grid-template-areas:  'title links tags sponsor';
+		align-content: space-between;
+		align-items: end;
+		grid-gap: 2rem;
+	}
+
+	.frame__title::after {
+		content: '_';
+	}
+	.frame__title::before {
+		content: '_';
+	}
+	.frame__demos {
+		justify-self: end;
+		align-self: end;
+		justify-content: flex-end;
+	}
+
+	body #cdawrap {
+    	justify-self: end;
+	}
+}

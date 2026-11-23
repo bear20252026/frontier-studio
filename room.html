@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Frontier Studio — room cover</title>
+<meta name="theme-color" content="#0b0d12">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:#090a0c;color:#f7f4ed;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;overflow:hidden}
+.room{position:relative;min-height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(20px,3.4vw,44px);isolation:isolate}
+.room img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.04);z-index:-3}
+.veil{position:absolute;inset:0;z-index:-2;background:
+ linear-gradient(180deg,rgba(7,9,12,.28) 0%,rgba(7,9,12,.12) 32%,rgba(7,9,12,.84) 74%,rgba(7,9,12,.97) 100%),
+ radial-gradient(88% 65% at 16% 10%,rgba(255,255,255,.16),transparent 58%)}
+.gridlines{position:absolute;inset:0;z-index:-1;opacity:.24;background:
+ repeating-linear-gradient(90deg,rgba(247,244,237,.2) 0 1px,transparent 1px 11vw),
+ repeating-linear-gradient(0deg,rgba(247,244,237,.12) 0 1px,transparent 1px 11vw);
+ mask-image:linear-gradient(180deg,#000 0%,transparent 62%)}
+.top{display:flex;justify-content:space-between;gap:16px;font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:clamp(8px,1.15vw,12px);letter-spacing:1.1px;text-transform:uppercase;color:rgba(247,244,237,.7)}
+.top strong{font-weight:400;color:#f7f4ed}
+.main{max-width:900px;margin-top:auto}
+.kicker{font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:clamp(8px,1.1vw,11px);letter-spacing:1.1px;text-transform:uppercase;color:rgba(247,244,237,.7);margin-bottom:clamp(8px,1.4vw,16px)}
+h1{font-size:clamp(46px,9.4vw,128px);font-weight:300;letter-spacing:-.062em;line-height:.9;max-width:8em}
+h1 em{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400}
+.p{max-width:52ch;margin-top:clamp(12px,2.1vw,24px);font-size:clamp(11px,1.35vw,16px);line-height:1.62;color:rgba(247,244,237,.72)}
+.stats{display:flex;gap:clamp(18px,3.2vw,46px);flex-wrap:wrap;margin-top:clamp(18px,3.4vw,40px);padding-top:clamp(11px,2vw,20px);border-top:1px solid rgba(247,244,237,.2)}
+.stats div{display:flex;align-items:baseline;gap:8px}
+.stats b{font-size:clamp(22px,3.5vw,44px);font-weight:350;letter-spacing:-1px;line-height:1}
+.stats span{font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:clamp(7px,1vw,10px);letter-spacing:.8px;text-transform:uppercase;color:rgba(247,244,237,.58)}
+.vols{display:flex;gap:8px;flex-wrap:wrap;margin-top:clamp(14px,2.4vw,26px)}
+.vols span{font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:clamp(7px,1vw,10px);letter-spacing:.5px;text-transform:uppercase;color:rgba(247,244,237,.74);border:1px solid rgba(247,244,237,.22);border-radius:999px;padding:5px 8px}
+.bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(20px,4vw,54px);padding-top:clamp(10px,1.8vw,15px);border-top:1px solid rgba(247,244,237,.18);font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:clamp(7px,1vw,10px);letter-spacing:.7px;text-transform:uppercase;color:rgba(247,244,237,.52)}
+.bottom a{color:#f7f4ed;text-decoration:none;border-bottom:1px solid rgba(247,244,237,.35);padding-bottom:3px}
+.enter{position:absolute;right:clamp(18px,3vw,40px);top:50%;transform:translateY(-50%);z-index:3;font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:clamp(8px,1.1vw,11px);letter-spacing:.9px;text-transform:uppercase;color:#f7f4ed;text-decoration:none;writing-mode:vertical-rl}
+.enter:hover{color:#fff}
+@media(max-width:600px){.enter{display:none}.room{justify-content:flex-start;gap:28px}h1{font-size:clamp(42px,13vw,70px)}.stats{gap:16px}}
+</style>
+</head>
+<body>
+<section class="room">
+  <img src="source/saharan/works/imgs/water.png" alt="Saharan, Water — blue caustic surface">
+  <span class="veil"></span><span class="gridlines"></span>
+  <header class="top"><span><strong>Frontier Studio</strong> · room 11</span><span>61 works / 6 volumes / 2026</span></header>
+  <div class="main">
+    <p class="kicker">Four authors · forty-one Codrops pieces · every source file present</p>
+    <h1>Frontier<br><em>Studio.</em></h1>
+    <p class="p">A room built around the repository: complete source snapshots, a local demo for every work, and six volumes that read like chapters instead of a feed.</p>
+    <div class="stats">
+      <div><b>61</b><span>works</span></div>
+      <div><b>53</b><span>repositories</span></div>
+      <div><b>6</b><span>volumes</span></div>
+      <div><b>202</b><span>MB source</span></div>
+    </div>
+    <div class="vols"><span>01 Saharan</span><span>02 David Li</span><span>03 Amanda Ghassaei</span><span>04 Jeantimex</span><span>05 Motion</span><span>06 Worlds</span></div>
+  </div>
+  <footer class="bottom"><span>Source © original authors · study archive</span><a href="index.html">Enter the wall ↗</a></footer>
+  <a class="enter" href="index.html">Enter ↗</a>
+</section>
+</body>
+</html>
